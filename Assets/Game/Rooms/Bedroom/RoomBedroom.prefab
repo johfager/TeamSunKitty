@@ -50,8 +50,8 @@ MonoBehaviour:
     m_cursor: 
     m_clickable: 1
     m_baseline: 0
-    m_walkToPoint: {x: 0, y: 0}
-    m_lookAtPoint: {x: 0, y: 0}
+    m_walkToPoint: {x: 734.4161, y: -219.94962}
+    m_lookAtPoint: {x: 767.42377, y: 111.916}
     m_scriptName: DoorToKitchen
 --- !u!60 &1717577089103892497
 PolygonCollider2D:
@@ -78,10 +78,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -10, y: -10}
-      - {x: -10, y: 10}
-      - {x: 10, y: 10}
-      - {x: 10, y: -10}
+    - - {x: 628.44556, y: -203.7352}
+      - {x: 646.05786, y: 481.12885}
+      - {x: 881.6245, y: 430.65704}
+      - {x: 887.25305, y: -261.66995}
 --- !u!1 &2126060533262949180
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,13 +303,9 @@ MonoBehaviour:
   m_animations:
   - {fileID: 7400000, guid: 93cdf40a286f9154c82e3c4dd9065064, type: 2}
   m_sprites:
-  - {fileID: 21300000, guid: 4310201bdd2b98d4589d9e8b1cf07b7a, type: 3}
   - {fileID: 21300000, guid: c7e0a1f82cae4fb4bb5fa0cdc3a4b0f5, type: 3}
+  - {fileID: 21300000, guid: 8cb52ea232104ae4b8634e1d66f4dba8, type: 2}
   - {fileID: 21300000, guid: 2a4f287326733da4ea083211cb24306d, type: 3}
-  - {fileID: 21300000, guid: 6dcaf68509d39b140ba99141e50d7a73, type: 3}
-  - {fileID: 21300000, guid: 204b12bc842479046bf8bdd89a3312f6, type: 3}
-  - {fileID: 21300000, guid: 7122070eda666aa4cb076e67f07d2cd5, type: 3}
-  - {fileID: 21300000, guid: ef1509ad4960c1745a8ce4117950eccd, type: 3}
 --- !u!1 &4041539454570560975
 GameObject:
   m_ObjectHideFlags: 0

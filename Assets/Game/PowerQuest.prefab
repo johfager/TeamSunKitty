@@ -96,6 +96,7 @@ MonoBehaviour:
   - {fileID: 114788632828080210, guid: 908a928d57ccea1418803714fc2b24b8, type: 3}
   - {fileID: 114107578643181592, guid: 815776d2d5a9623498c61578ffc4c1cc, type: 3}
   - {fileID: 2656053745762178786, guid: 21971dd18b4ad12429fdaf8ea2e51c9a, type: 3}
+  - {fileID: 4464396677134979534, guid: 956ea1f819617d74e8e61a3d15d8e7d6, type: 3}
   m_characterPrefabs:
   - {fileID: 114953134120639602, guid: b4910caf4195aeb45895069ad277b9fd, type: 3}
   - {fileID: 114894982771319608, guid: 65de018bf92bf6a4088d8c3f977119e7, type: 3}
@@ -117,16 +118,7 @@ MonoBehaviour:
   - {fileID: 7400000, guid: 10856a3a6e09a994f876dd16f8272cce, type: 2}
   m_inventorySprites:
   - {fileID: 21300000, guid: 3128a95e76c6adf44a7ffde8daa56743, type: 3}
-  m_guiAnimations:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  m_guiAnimations: []
   m_guiSprites:
   - {fileID: 21300000, guid: 6a87f4e540b9ead4ab036f0197dec31e, type: 3}
   - {fileID: 21300000, guid: 5a2e190714fb1234585290ae1f061236, type: 3}

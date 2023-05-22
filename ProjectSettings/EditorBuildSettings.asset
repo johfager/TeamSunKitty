@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game/Rooms/Bedroom/SceneRoomBedroom.unity
     guid: fa2ed9a2d7fb6c843a29cbb1861e2a89
+  - enabled: 1
+    path: Assets/Game/Rooms/LivingRoom/SceneRoomLivingRoom.unity
+    guid: 25a0c44b4e83ba54f96f3d9ab555d645
   m_configObjects: {}
