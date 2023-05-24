@@ -15,6 +15,19 @@ public class RoomLivingRoom : RoomScript<RoomLivingRoom>
 		yield return C.FaceClicked();
 		
 		E.ChangeRoomBG(R.Bedroom);
+		C.MainChar.SetPosition(600, -200);
+		yield return E.Break;
+	}
+
+	void OnEnterRoom()
+	{
+	}
+
+	IEnumerator OnEnterRoomAfterFade()
+	{
+		yield return C.MainChar.Say("Hmm did the coders do anything to this room?");
+		yield return C.Display("Nope");
+		yield return C.Display("The bedroom is probably more interesting");
 		yield return E.Break;
 	}
 }

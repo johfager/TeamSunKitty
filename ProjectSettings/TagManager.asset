@@ -47,3 +47,6 @@ TagManager:
   - name: GameText
     uniqueID: 1935310555
     locked: 0
+  - name: Objects
+    uniqueID: 3227502875
+    locked: 0

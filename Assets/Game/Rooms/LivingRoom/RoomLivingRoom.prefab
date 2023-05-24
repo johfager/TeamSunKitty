@@ -61,7 +61,9 @@ MonoBehaviour:
     m_shortName: LivingRoom
     m_scriptClass: RoomLivingRoom
     m_sceneName: SceneRoomLivingRoom
-    m_points: []
+    m_points:
+    - m_name: EntryfromBedRoom
+      m_position: {x: -565.67377, y: -306.9081}
   m_debugStartFunction: 
   m_hotspotComponents:
   - {fileID: 5168589363841249415}
