@@ -6,7 +6,8 @@ using static GlobalScript;
 
 public class RoomBedroom : RoomScript<RoomBedroom>
 {
-	
+
+	
 	// This area is where you can put variables you want to use for game logic in your room
 	
 	// Here's an example variable, an integer which is used when clicking the sky.
@@ -59,6 +60,7 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 	IEnumerator OnInteractHotspotRuneInteraction( IHotspot hotspot )
 	{
 		yield return C.MainChar.Say("What is this? Why does it look so familiar...");
+		yield return C.Display(" Yes, you are 'using' this rune");
 		yield return E.Break;
 	}
 
@@ -86,5 +88,11 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 
 	void OnEnterRoom()
 	{
+	}
+
+	IEnumerator OnLookAtHotspotRuneInteraction( IHotspot hotspot )
+	{
+
+		yield return E.Break;
 	}
 }
