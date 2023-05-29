@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game/Rooms/PipesPuzzle/SceneRoomPipesPuzzle.unity
     guid: 295ee5e49390b4719906aabaa954a6a7
+  - enabled: 1
+    path: Assets/Game/Rooms/BedroomPuzzle/SceneRoomBedroomPuzzle.unity
+    guid: af7933053e212485eb1a84999485b063
   m_configObjects: {}
