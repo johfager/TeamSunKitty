@@ -38,7 +38,7 @@ public class PuzzleManager : MonoBehaviour
     {
 
         //Check win condition
-        if (numCompleted==totalPieces)
+        if (numCompleted>=totalPieces)
         {
             PopItem_key.SetActive(true); //key reward appear at Pop layer
         }

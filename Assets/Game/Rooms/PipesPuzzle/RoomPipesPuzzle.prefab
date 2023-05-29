@@ -102,6 +102,7 @@ MonoBehaviour:
   isPlaced: 0
   spriteRenderer: {fileID: 197630375}
   newSprite: {fileID: 21300000, guid: e3cc1c2caf10c41338d2ddbae13b3abc, type: 3}
+  otherObject: {fileID: 0}
 --- !u!61 &197630376
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -230,6 +231,7 @@ MonoBehaviour:
   isPlaced: 0
   spriteRenderer: {fileID: 230590459}
   newSprite: {fileID: 21300000, guid: 4af1c00c4cb604c13a2461178a17e3d8, type: 3}
+  otherObject: {fileID: 0}
 --- !u!61 &230590460
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -358,6 +360,7 @@ MonoBehaviour:
   isPlaced: 0
   spriteRenderer: {fileID: 319976809}
   newSprite: {fileID: 21300000, guid: fde00f2fc96ab448ea3fb152cf611839, type: 3}
+  otherObject: {fileID: 0}
 --- !u!61 &319976810
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -486,6 +489,7 @@ MonoBehaviour:
   isPlaced: 0
   spriteRenderer: {fileID: 530804617}
   newSprite: {fileID: 21300000, guid: eb6b1006b44e24fbab4e008e2ea26161, type: 3}
+  otherObject: {fileID: 0}
 --- !u!61 &530804618
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -614,6 +618,7 @@ MonoBehaviour:
   isPlaced: 0
   spriteRenderer: {fileID: 530850999}
   newSprite: {fileID: 21300000, guid: f7eae0a01554b456fb51f1deff2ca381, type: 3}
+  otherObject: {fileID: 0}
 --- !u!61 &530851000
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -742,6 +747,7 @@ MonoBehaviour:
   isPlaced: 0
   spriteRenderer: {fileID: 672762532}
   newSprite: {fileID: 21300000, guid: 8b20b19b9ad6d45ceb97de213e17d7b1, type: 3}
+  otherObject: {fileID: 0}
 --- !u!61 &672762533
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -870,6 +876,7 @@ MonoBehaviour:
   isPlaced: 0
   spriteRenderer: {fileID: 693215135}
   newSprite: {fileID: 21300000, guid: 0eec88df58dcd4c9fba1e3d3624fb4bd, type: 3}
+  otherObject: {fileID: 0}
 --- !u!61 &693215136
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -998,6 +1005,7 @@ MonoBehaviour:
   isPlaced: 0
   spriteRenderer: {fileID: 755630697}
   newSprite: {fileID: 21300000, guid: d439cad2394e949e1b018088a06a5909, type: 3}
+  otherObject: {fileID: 0}
 --- !u!61 &755630698
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1126,6 +1134,7 @@ MonoBehaviour:
   isPlaced: 0
   spriteRenderer: {fileID: 769212104}
   newSprite: {fileID: 21300000, guid: 85e3ed28d956147999605027c1db0ca3, type: 3}
+  otherObject: {fileID: 0}
 --- !u!61 &769212105
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1254,6 +1263,7 @@ MonoBehaviour:
   isPlaced: 0
   spriteRenderer: {fileID: 1131463718}
   newSprite: {fileID: 21300000, guid: e99b6c8a4a238448ca318c12542482d0, type: 3}
+  otherObject: {fileID: 0}
 --- !u!61 &1131463719
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1433,6 +1443,7 @@ MonoBehaviour:
   isPlaced: 0
   spriteRenderer: {fileID: 1229006352}
   newSprite: {fileID: 21300000, guid: cedafcdc6d1c24f1cbb7837f395eaa3a, type: 3}
+  otherObject: {fileID: 0}
 --- !u!61 &1229006353
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1561,6 +1572,7 @@ MonoBehaviour:
   isPlaced: 0
   spriteRenderer: {fileID: 1274457991}
   newSprite: {fileID: 21300000, guid: d9b76f341bd0842a292e0bfad49c4164, type: 3}
+  otherObject: {fileID: 0}
 --- !u!61 &1274457992
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1689,6 +1701,7 @@ MonoBehaviour:
   isPlaced: 0
   spriteRenderer: {fileID: 1353272128}
   newSprite: {fileID: 21300000, guid: f6f2e95e2a06d41fc80533ac6d524f38, type: 3}
+  otherObject: {fileID: 0}
 --- !u!61 &1353272129
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1817,6 +1830,7 @@ MonoBehaviour:
   isPlaced: 0
   spriteRenderer: {fileID: 1395352741}
   newSprite: {fileID: 21300000, guid: 7df05cc2fd0504e05906e6db90f36758, type: 3}
+  otherObject: {fileID: 0}
 --- !u!61 &1395352742
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1945,6 +1959,7 @@ MonoBehaviour:
   isPlaced: 0
   spriteRenderer: {fileID: 1548852082}
   newSprite: {fileID: 21300000, guid: 733e95e22a7674f549336ebc89ce8611, type: 3}
+  otherObject: {fileID: 0}
 --- !u!61 &1548852083
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2073,6 +2088,7 @@ MonoBehaviour:
   isPlaced: 0
   spriteRenderer: {fileID: 1574826689}
   newSprite: {fileID: 21300000, guid: 1fa56ffe0225e45c8a55154c21215a44, type: 3}
+  otherObject: {fileID: 0}
 --- !u!61 &1574826690
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2201,6 +2217,7 @@ MonoBehaviour:
   isPlaced: 0
   spriteRenderer: {fileID: 1575230768}
   newSprite: {fileID: 21300000, guid: dcb43e97b0eff4c6db1377ec3c506d30, type: 3}
+  otherObject: {fileID: 0}
 --- !u!61 &1575230769
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2329,6 +2346,7 @@ MonoBehaviour:
   isPlaced: 0
   spriteRenderer: {fileID: 1632643653}
   newSprite: {fileID: 21300000, guid: 2127d0eb63c7f4035a391100bba87398, type: 3}
+  otherObject: {fileID: 0}
 --- !u!61 &1632643654
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2457,6 +2475,7 @@ MonoBehaviour:
   isPlaced: 0
   spriteRenderer: {fileID: 1652428353}
   newSprite: {fileID: 21300000, guid: f7645219c61d944e4b51412130235ce0, type: 3}
+  otherObject: {fileID: 0}
 --- !u!61 &1652428354
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2585,6 +2604,7 @@ MonoBehaviour:
   isPlaced: 0
   spriteRenderer: {fileID: 1990435886}
   newSprite: {fileID: 21300000, guid: aeca4fad25edc461cb5cf91164a332cf, type: 3}
+  otherObject: {fileID: 0}
 --- !u!61 &1990435887
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2786,7 +2806,7 @@ SpriteRenderer:
   m_Size: {x: 64, y: 64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &2625924143273286131
@@ -2882,8 +2902,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f7645219c61d944e4b51412130235ce0, type: 3}
   - {fileID: 21300000, guid: 733e95e22a7674f549336ebc89ce8611, type: 3}
   - {fileID: 21300000, guid: fde00f2fc96ab448ea3fb152cf611839, type: 3}
+  - {fileID: 21300000, guid: fe089725226c04e0ea812e8d965c9383, type: 3}
   - {fileID: 21300000, guid: bca85e3b7b3b646d09f9d2fb32975d31, type: 3}
-  - {fileID: 21300000, guid: 68a36a68e18e64ce887eaf22e0513d70, type: 3}
   - {fileID: 21300000, guid: 5d30f8796af6c4b67a821ff3ae227b16, type: 3}
   - {fileID: 21300000, guid: 9cba59405c3b7497a92b17832de4e040, type: 3}
   - {fileID: 21300000, guid: 92b0d32a509594bf8ad388bc7afd345f, type: 3}
