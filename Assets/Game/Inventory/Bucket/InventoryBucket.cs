@@ -19,4 +19,10 @@ public class InventoryBucket : InventoryScript<InventoryBucket>
 
 		yield return E.Break;
 	}
+
+	IEnumerator OnInteractInventory( IInventory thisItem )
+	{
+
+		yield return E.Break;
+	}
 }
