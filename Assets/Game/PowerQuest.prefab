@@ -118,10 +118,12 @@ MonoBehaviour:
   - {fileID: 114281990419900940, guid: be73794dfb294f14982196647fe6e96b, type: 3}
   m_inventoryPrefabs:
   - {fileID: 114497078864246608, guid: 7a896bee3c107ce49b5aebeb3b5d1b31, type: 3}
+  - {fileID: 7139669985106808378, guid: dc282630172d0814584f9160645b3c37, type: 3}
   m_inventoryAnimations:
   - {fileID: 7400000, guid: 10856a3a6e09a994f876dd16f8272cce, type: 2}
   m_inventorySprites:
   - {fileID: 21300000, guid: 3128a95e76c6adf44a7ffde8daa56743, type: 3}
+  - {fileID: 21300000, guid: 48b7f75a5cf01cc4c94b09a685a9ba4f, type: 3}
   m_guiAnimations: []
   m_guiSprites:
   - {fileID: 21300000, guid: 6a87f4e540b9ead4ab036f0197dec31e, type: 3}

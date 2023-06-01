@@ -6,33 +6,55 @@ using static GlobalScript;
 
 public class RoomBedroom : RoomScript<RoomBedroom>
 {
-
-	
+	
 	// This area is where you can put variables you want to use for game logic in your room
 	
 	// Here's an example variable, an integer which is used when clicking the sky.
 	// The 'm_' at the start is just a naming convention so you can tell it's not just a 'local' variable
 	int m_timesClickedSky = 0;
-	
+	bool m_bedRoomDoorUnlocked = false;
 	// enums like this are a nice way of keeping track of what's happened in a room
-	enum eThingsYouveDone { Start, InsultedChimp, EatenSandwich, LoadedCrossbow, AttackedFlyingNun, PhonedAlbatross }
+	enum eThingsYouveDone { Start, InsultedChimp, EatenSandwich, LoadedCrossbow, AttackedFlyingNun, PhonedAlbatross}
 	eThingsYouveDone m_thingsDone = eThingsYouveDone.Start;
-	public bool m_rugInteract = false;
-	
-	
 	IEnumerator OnInteractHotspotDoorToKitchen( IHotspot hotspot )
 	{
 		yield return C.WalkToClicked();
 		yield return C.FaceClicked();
 		
-		E.ChangeRoomBG(R.LivingRoom);
-		C.MainChar.SetPosition(-600, -200);
+		if (m_bedRoomDoorUnlocked == true)
+		{
+			E.ChangeRoomBG(R.LivingRoom);
+			C.MainChar.SetPosition(-600, -200);
+		}
+		else
+		{
+			yield return C.Display(" Door seems to be locked");
+		}
+		
+		
 		yield return E.Break;
 	}
 
 	IEnumerator OnUseInvHotspotDoorToKitchen( IHotspot hotspot, IInventory item )
 	{
-
+		
+		// NB: You need to check they used the correct item!
+		if ( item == I.Active )
+		{
+			yield return C.WalkToClicked();
+			yield return C.FaceClicked();
+			yield return C.Display("MainChar swiftly turns the key hearing a click sound");
+			Globals.m_progressExample = eProgress.BedRoomUnlocked;
+			yield return C.Dave.Say("Yaaay! I solved the real hard puzzle!");
+			m_bedRoomDoorUnlocked = true;
+		
+			yield return E.Wait(1);
+			yield return E.WaitSkip();
+			yield return C.MainChar.FaceDown();
+			yield return E.WaitSkip();
+			yield return C.MainChar.Say("Yaay!");
+		}
+		
 		yield return E.Break;
 	}
 
@@ -50,7 +72,7 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 
 	IEnumerator OnInteractPropRug( IProp prop )
 	{
-		m_rugInteract = true;
+		//m_rugInteract = true;
 		
 		Prop("Rug").Disable();
 		Hotspot("RuneInteraction").Enable();
@@ -60,7 +82,8 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 	IEnumerator OnInteractHotspotRuneInteraction( IHotspot hotspot )
 	{
 		yield return C.MainChar.Say("What is this? Why does it look so familiar...");
-		E.ChangeRoomBG(R.BedroomPuzzle);
+		yield return C.Display(" Yes, you are 'using' this rune");
+		yield return E.Break;
 	}
 
 	IEnumerator OnEnterRoomAfterFade()
@@ -95,8 +118,33 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		yield return E.Break;
 	}
 
+	IEnumerator OnInteractPropKey( IProp prop )
+	{
+		yield return C.WalkToClicked();
+		yield return C.Display("Surprise, key was picked up");
+		Audio.Play("Bucket");
+		prop.Disable();
+		I.Key.AddAsActive();
+		yield return E.WaitSkip();
+		yield return C.Player.FaceDown();
+		yield return C.MainChar.Say("Yaaay! I got a key! I wish it was a bucket tho :(");
+		yield return E.WaitSkip();
+		yield return C.Display("Access your Inventory from the top of the screen");
+		
+		yield return E.Break;
+		
+		yield return E.Break;
+	}
+
 	IEnumerator OnLookAtHotspotDoorToKitchen( IHotspot hotspot )
 	{
+
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtPropKey( IProp prop )
+	{
+
 		yield return E.Break;
 	}
 }

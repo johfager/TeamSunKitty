@@ -22,6 +22,7 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 		None,
 		GotWater,
 		DrankWater,
+		BedRoomUnlocked,
 		WonGame
 	};
 	public eProgress m_progressExample = eProgress.None;
@@ -29,6 +30,7 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 	/// Just an example of using a global variable that can be accessed in any room with `Globals.m_spokeToBarney`.
 	/// All variables like this in Quest Scripts are automatically saved
 	public bool m_spokeToBarney = false;
+	public bool m_bedRoomDoorUnlocked = false;
 	
 	////////////////////////////////////////////////////////////////////////////////////
 	// Global Game Functions
