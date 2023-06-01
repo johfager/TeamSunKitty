@@ -83,7 +83,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &197630377
@@ -212,7 +212,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &230590461
@@ -341,7 +341,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &319976811
@@ -470,7 +470,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &530804619
@@ -599,7 +599,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &530851001
@@ -728,7 +728,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &672762534
@@ -857,7 +857,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &693215137
@@ -986,7 +986,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &755630699
@@ -1115,7 +1115,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &769212106
@@ -1244,7 +1244,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1131463720
@@ -1424,7 +1424,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1229006354
@@ -1553,7 +1553,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1274457993
@@ -1682,7 +1682,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1353272130
@@ -1811,7 +1811,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1395352743
@@ -1940,7 +1940,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1548852084
@@ -2069,7 +2069,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1574826691
@@ -2198,7 +2198,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1575230770
@@ -2327,7 +2327,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1632643655
@@ -2456,7 +2456,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1652428355
@@ -2585,7 +2585,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1990435888
@@ -2902,28 +2902,36 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f7645219c61d944e4b51412130235ce0, type: 3}
   - {fileID: 21300000, guid: 733e95e22a7674f549336ebc89ce8611, type: 3}
   - {fileID: 21300000, guid: fde00f2fc96ab448ea3fb152cf611839, type: 3}
+  - {fileID: 21300000, guid: c9f3dc27596ae46629a8bc925f94235d, type: 3}
   - {fileID: 21300000, guid: fe089725226c04e0ea812e8d965c9383, type: 3}
   - {fileID: 21300000, guid: bca85e3b7b3b646d09f9d2fb32975d31, type: 3}
-  - {fileID: 21300000, guid: 5d30f8796af6c4b67a821ff3ae227b16, type: 3}
-  - {fileID: 21300000, guid: 9cba59405c3b7497a92b17832de4e040, type: 3}
-  - {fileID: 21300000, guid: 92b0d32a509594bf8ad388bc7afd345f, type: 3}
-  - {fileID: 21300000, guid: 57368a1b422e94d989adce9532988e00, type: 3}
-  - {fileID: 21300000, guid: 46644e8acef95436a80abf41779450ef, type: 3}
-  - {fileID: 21300000, guid: 58fa275534c254611ab57706c6f9962b, type: 3}
-  - {fileID: 21300000, guid: 38a7d4e2bb1084f3692effd096698c7e, type: 3}
-  - {fileID: 21300000, guid: a445e53c8cfb04d949f68dbe203b98f0, type: 3}
-  - {fileID: 21300000, guid: 61a4c304c7f4643a69241da24588eb4b, type: 3}
-  - {fileID: 21300000, guid: 36764e33e8cc4401a8f4613e287255ec, type: 3}
-  - {fileID: 21300000, guid: 7f0395b97314949e7886c92bd78f049e, type: 3}
-  - {fileID: 21300000, guid: 26bfd978e469a48cd898a75f21a91b0e, type: 3}
-  - {fileID: 21300000, guid: 867bb08aa2d264cd49e1e52e2d1b0ee6, type: 3}
-  - {fileID: 21300000, guid: 4b01fc7b0898f48ad956c40340b07f8e, type: 3}
-  - {fileID: 21300000, guid: 87807f85ecc5e476380f2b6b482ddd4d, type: 3}
-  - {fileID: 21300000, guid: 49384753de38446899897bb06ef52c45, type: 3}
-  - {fileID: 21300000, guid: bc7748d0dc5e2453da48b76833b30886, type: 3}
-  - {fileID: 21300000, guid: 2c693973caac043b98872a6ed6b19d5b, type: 3}
-  - {fileID: 21300000, guid: a09a2fca02c5b4efeb8a27fbd88e6551, type: 3}
-  - {fileID: 21300000, guid: 6ae91854d41ed477ebad2b32a5c9e331, type: 3}
+  - {fileID: 21300000, guid: 388cff566f8754dbea043008c6cbd998, type: 3}
+  - {fileID: 21300000, guid: ff954eed6305240f2a71ec8ea08d97c3, type: 3}
+  - {fileID: 21300000, guid: 34750d10f90dd4fb0927467fb0f88afa, type: 3}
+  - {fileID: 21300000, guid: a92ebee63c9a4408d9abd0c65781074a, type: 3}
+  - {fileID: 21300000, guid: bac6e5694bf2746cbadae64d8426e26a, type: 3}
+  - {fileID: 21300000, guid: f051512cd2e9f4b5fa75017123d769fa, type: 3}
+  - {fileID: 21300000, guid: 693dd48279240445a838d1aeff8d217a, type: 3}
+  - {fileID: 21300000, guid: 21bdb6cfae57c4ca6baf1b54ba8e4418, type: 3}
+  - {fileID: 21300000, guid: 493462c9eb4c240858768ad8dd0854ce, type: 3}
+  - {fileID: 21300000, guid: 378cb908b09854811816878fd485f6c2, type: 3}
+  - {fileID: 21300000, guid: 6fa2af2e0ecca479f876f993081de1c0, type: 3}
+  - {fileID: 21300000, guid: 3137dcc9ae9cf48aab56d98293732fee, type: 3}
+  - {fileID: 21300000, guid: 62fcac4e18d464469be8e4b80d50d61f, type: 3}
+  - {fileID: 21300000, guid: be846e56229c7442db779f4dbf9f9433, type: 3}
+  - {fileID: 21300000, guid: 37db74c70f0fe4809b0d6b60b29c61ac, type: 3}
+  - {fileID: 21300000, guid: 1eaf6fb4c251f416d984f3511f587442, type: 3}
+  - {fileID: 21300000, guid: e910b822e039e4b50b758747d98917d2, type: 3}
+  - {fileID: 21300000, guid: 3bee62c9425554a7dbf55450fa17fb80, type: 3}
+  - {fileID: 21300000, guid: 86fa1090a07c24876a673f5c2dd439b8, type: 3}
+  - {fileID: 21300000, guid: 8be9aed05433640439d551513c461f19, type: 3}
+  - {fileID: 21300000, guid: b52263a74214a4cdd8a1c06a9b350adb, type: 3}
+  - {fileID: 21300000, guid: 297bdb8ac4a884b25ad82d07552de54d, type: 3}
+  - {fileID: 21300000, guid: 1142faecdaaf54f469689b3844725c27, type: 3}
+  - {fileID: 21300000, guid: 01674d02c64164913b919395a7fa4b54, type: 3}
+  - {fileID: 21300000, guid: e93f83ce0bb7c40b99106cf7f2ce5eac, type: 3}
+  - {fileID: 21300000, guid: 2085314c606ef4a6b889d1d9bfd11a1d, type: 3}
+  - {fileID: 21300000, guid: 1ce0b89d054ca449387e3604f910cbb8, type: 3}
 --- !u!1 &8309205376228491325
 GameObject:
   m_ObjectHideFlags: 0

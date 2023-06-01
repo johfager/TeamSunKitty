@@ -36,6 +36,7 @@ bool isPlaced= false; //will update to check if registered correct placement
         if(transform.eulerAngles.z==correctRotation && isPlaced== false)
         {
             isPlaced= true; //register as placed
+            puzzleManager.numCompleted++;
 
             //visible effect showing it's correct
 
@@ -46,8 +47,13 @@ bool isPlaced= false; //will update to check if registered correct placement
     //rotate clicked piece
     //transform.Rotate(new Vector3(0,0,90)); //orig
     //youtube check fix from random assortment won't be checked correctly
-    transform.Rotate(0,0,90);
-    transform.eulerAngles= new Vector3(0,0,Mathf.Round(transform.eulerAngles.z));
+    //don't rotate correct ones
+    if (isPlaced==false) //not working yet
+    {
+        transform.Rotate(0,0,90);
+        transform.eulerAngles= new Vector3(0,0,Mathf.Round(transform.eulerAngles.z));
+    }
+    
 
     // check if right rotation
     //modified with yt
