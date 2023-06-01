@@ -20,4 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game/Rooms/LivingRoom/SceneRoomLivingRoom.unity
     guid: 25a0c44b4e83ba54f96f3d9ab555d645
+  - enabled: 1
+    path: Assets/Game/Rooms/FrontYard/SceneRoomFrontYard.unity
+    guid: dcd709ea793f8456ebca89e6ab034ade
+  - enabled: 1
+    path: Assets/Game/Rooms/PipesPuzzle/SceneRoomPipesPuzzle.unity
+    guid: 295ee5e49390b4719906aabaa954a6a7
+  - enabled: 1
+    path: Assets/Game/Rooms/BedroomPuzzle/SceneRoomBedroomPuzzle.unity
+    guid: af7933053e212485eb1a84999485b063
   m_configObjects: {}

@@ -60,8 +60,7 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 	IEnumerator OnInteractHotspotRuneInteraction( IHotspot hotspot )
 	{
 		yield return C.MainChar.Say("What is this? Why does it look so familiar...");
-		yield return C.Display(" Yes, you are 'using' this rune");
-		yield return E.Break;
+		E.ChangeRoomBG(R.BedroomPuzzle);
 	}
 
 	IEnumerator OnEnterRoomAfterFade()
@@ -93,6 +92,11 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 	IEnumerator OnLookAtHotspotRuneInteraction( IHotspot hotspot )
 	{
 
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtHotspotDoorToKitchen( IHotspot hotspot )
+	{
 		yield return E.Break;
 	}
 }
