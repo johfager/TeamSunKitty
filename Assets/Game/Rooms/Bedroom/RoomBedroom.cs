@@ -121,14 +121,13 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 	IEnumerator OnInteractPropKey( IProp prop )
 	{
 		yield return C.WalkToClicked();
-		yield return C.FaceClicked();
-		yield return C.Display("Dave stoops to pick up the bucket");
+		yield return C.Display("Surprise, key was picked up");
 		Audio.Play("Bucket");
 		prop.Disable();
 		I.Key.AddAsActive();
 		yield return E.WaitSkip();
 		yield return C.Player.FaceDown();
-		yield return C.MainChar.Say("Yaaay! I got a bucket!");
+		yield return C.MainChar.Say("Yaaay! I got a key! I wish it was a bucket tho :(");
 		yield return E.WaitSkip();
 		yield return C.Display("Access your Inventory from the top of the screen");
 		
@@ -138,6 +137,12 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 	}
 
 	IEnumerator OnLookAtHotspotDoorToKitchen( IHotspot hotspot )
+	{
+
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtPropKey( IProp prop )
 	{
 
 		yield return E.Break;
