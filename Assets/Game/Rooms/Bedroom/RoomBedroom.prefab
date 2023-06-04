@@ -502,14 +502,11 @@ MonoBehaviour:
   m_sprites:
   - {fileID: 21300000, guid: 3b41cf420eabd1945a19febaced3e9e1, type: 3}
   - {fileID: 21300000, guid: 1a31ede8c8806554eb6df4584c61e7d2, type: 3}
-  - {fileID: 21300000, guid: fdcc9ae8268684f94a5f0100f851a83b, type: 3}
-  - {fileID: 21300000, guid: da66e22ae6efc415d96dd96d6ad31f1a, type: 3}
   - {fileID: 21300000, guid: c7e0a1f82cae4fb4bb5fa0cdc3a4b0f5, type: 3}
   - {fileID: 21300000, guid: dc0b37765d7c6b74d8f249da499305f1, type: 3}
   - {fileID: 21300000, guid: 8cb52ea232104ae4b8634e1d66f4dba8, type: 2}
   - {fileID: 21300000, guid: 2a4f287326733da4ea083211cb24306d, type: 3}
   - {fileID: 21300000, guid: 5ca4da4e5a938ef40a0274f47bcf78d1, type: 3}
-  - {fileID: 21300000, guid: 8683813fe03cdc34e8d1617ecb7c7efe, type: 3}
   - {fileID: 21300000, guid: b8256b94676a2b74b917abc62da5d592, type: 3}
   - {fileID: 21300000, guid: f4921fabdb0a37f4896cbef1cce10276, type: 3}
 --- !u!1 &2880624824096731590
