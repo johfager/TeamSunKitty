@@ -100,6 +100,7 @@ MonoBehaviour:
   - {fileID: 5379847684618700815, guid: a3d90e97ee8e94bbcb11e075332a8b4a, type: 3}
   - {fileID: 3541315525501641443, guid: 49228d8e2e7d549a78b4707d95fe6f8c, type: 3}
   - {fileID: 791206159006794105, guid: 62309b3464b8c49c7b7488d2eb44e8dd, type: 3}
+  - {fileID: 3243868444895013928, guid: 1d4c14cee3598584f8f87d32a81fd0d8, type: 3}
   m_characterPrefabs:
   - {fileID: 6288254021414055699, guid: f3e5e7c08fd60ce4bb6d817b618f2c16, type: 3}
   - {fileID: 114953134120639602, guid: b4910caf4195aeb45895069ad277b9fd, type: 3}
