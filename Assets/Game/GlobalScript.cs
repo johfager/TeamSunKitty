@@ -23,7 +23,8 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 		GotWater,
 		DrankWater,
 		BedRoomUnlocked,
-		WonGame
+		WonGame,
+		LitLivingRoom
 	};
 	public eProgress m_progressExample = eProgress.None;
 	
@@ -31,6 +32,7 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 	/// All variables like this in Quest Scripts are automatically saved
 	public bool m_spokeToBarney = false;
 	public bool m_bedRoomDoorUnlocked = false;
+	public bool m_livingRoomLit = false;
 	
 	////////////////////////////////////////////////////////////////////////////////////
 	// Global Game Functions

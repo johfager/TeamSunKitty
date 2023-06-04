@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game/Rooms/BedroomPuzzle/SceneRoomBedroomPuzzle.unity
     guid: af7933053e212485eb1a84999485b063
+  - enabled: 1
+    path: Assets/Game/Rooms/StateExperimentRoom/SceneRoomStateExperimentRoom.unity
+    guid: 1aef015f645048d4a816cebef267f52e
   m_configObjects: {}
