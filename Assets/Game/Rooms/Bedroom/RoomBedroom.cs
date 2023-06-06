@@ -147,4 +147,10 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 
 		yield return E.Break;
 	}
+
+	IEnumerator OnUseInvHotspotRuneInteraction( IHotspot hotspot, IInventory item )
+	{
+
+		yield return E.Break;
+	}
 }
