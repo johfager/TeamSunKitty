@@ -236,11 +236,13 @@ public class RoomForest : RoomScript<RoomForest>
 		yield return E.Break;
 	}
 
+
 	IEnumerator OnInteractCharacterDave( ICharacter character )
 	{
 
 		yield return E.Break;
 	}
+
 
 	IEnumerator OnInteractCharacterKettil( ICharacter character )
 	{

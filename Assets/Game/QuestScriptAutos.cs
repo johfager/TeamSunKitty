@@ -25,6 +25,7 @@ namespace PowerScript
 		// Access to specific Inventory (Auto-generated)
 		public static IInventory Bucket         { get { return PowerQuest.Get.GetInventory("Bucket"); } }
 		public static IInventory Key            { get { return PowerQuest.Get.GetInventory("Key"); } }
+		public static IInventory Matches        { get { return PowerQuest.Get.GetInventory("Matches"); } }
 		// #INVENTORY# - Do not edit this line, it's used by the system to insert rooms for easy access
 	}
 
@@ -55,6 +56,8 @@ namespace PowerScript
 		public static IRoom PipesPuzzle    { get { return PowerQuest.Get.GetRoom("PipesPuzzle"); } }
 		public static IRoom BedroomPuzzle  { get { return PowerQuest.Get.GetRoom("BedroomPuzzle"); } }
 		public static IRoom StateExperimentRoom { get { return PowerQuest.Get.GetRoom("StateExperimentRoom"); } }
+		public static IRoom LitLivingRoom  { get { return PowerQuest.Get.GetRoom("LitLivingRoom"); } }
+		public static IRoom StateStartRoom { get { return PowerQuest.Get.GetRoom("StateStartRoom"); } }
 		public static IRoom LitKitchen     { get { return PowerQuest.Get.GetRoom("LitKitchen"); } }
 		public static IRoom EndScene       { get { return PowerQuest.Get.GetRoom("EndScene"); } }
 		public static IRoom KitchenNewspaper { get { return PowerQuest.Get.GetRoom("KitchenNewspaper"); } }
