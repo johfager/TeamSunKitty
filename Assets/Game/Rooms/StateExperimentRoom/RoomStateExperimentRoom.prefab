@@ -371,6 +371,7 @@ GameObject:
   - component: {fileID: 1169075585176204521}
   - component: {fileID: 6409206793514483169}
   - component: {fileID: 5778507032453575252}
+  - component: {fileID: 8824191906828963466}
   m_Layer: 0
   m_Name: PropBackground
   m_TagString: Untagged
@@ -506,6 +507,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8824191906828963466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2785289703274607153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 928b469813940af4981a5d1c9210168f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightRoomEvent: {fileID: 11400000, guid: eb9f5257979deba44a6081ee19a5bfbf, type: 2}
+  litRoomSprite: {fileID: 21300000, guid: c7e0a1f82cae4fb4bb5fa0cdc3a4b0f5, type: 3}
 --- !u!1 &6843492166504140044
 GameObject:
   m_ObjectHideFlags: 0
@@ -516,6 +531,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1045584725816362608}
   - component: {fileID: 3243868444895013928}
+  - component: {fileID: 6502582757087463859}
   m_Layer: 0
   m_Name: RoomStateExperimentRoom
   m_TagString: Untagged
@@ -568,7 +584,9 @@ MonoBehaviour:
     m_shortName: StateExperimentRoom
     m_scriptClass: RoomStateExperimentRoom
     m_sceneName: SceneRoomStateExperimentRoom
-    m_points: []
+    m_points:
+    - m_name: Entry
+      m_position: {x: -733.7024, y: -299.0183}
   m_debugStartFunction: 
   m_hotspotComponents: []
   m_propComponents:
@@ -580,6 +598,19 @@ MonoBehaviour:
   - {fileID: 9591110358212549}
   m_animations: []
   m_sprites: []
+--- !u!114 &6502582757087463859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6843492166504140044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5395d309f45f5e74193f65999f7da740, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  voidEvent: {fileID: 11400000, guid: eb9f5257979deba44a6081ee19a5bfbf, type: 2}
 --- !u!1 &8018579864418587705
 GameObject:
   m_ObjectHideFlags: 0

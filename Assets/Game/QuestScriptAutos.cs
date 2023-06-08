@@ -54,6 +54,8 @@ namespace PowerScript
 		public static IRoom PipesPuzzle    { get { return PowerQuest.Get.GetRoom("PipesPuzzle"); } }
 		public static IRoom BedroomPuzzle  { get { return PowerQuest.Get.GetRoom("BedroomPuzzle"); } }
 		public static IRoom StateExperimentRoom { get { return PowerQuest.Get.GetRoom("StateExperimentRoom"); } }
+		public static IRoom LitLivingRoom  { get { return PowerQuest.Get.GetRoom("LitLivingRoom"); } }
+		public static IRoom StateStartRoom { get { return PowerQuest.Get.GetRoom("StateStartRoom"); } }
 		// #ROOM# - Do not edit this line, it's used by the system to insert rooms for easy access
 	}
 
