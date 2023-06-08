@@ -6,16 +6,20 @@ using static GlobalScript;
 
 public class RoomBedroom : RoomScript<RoomBedroom>
 {
-	
+	
 	// This area is where you can put variables you want to use for game logic in your room
 	
 	// Here's an example variable, an integer which is used when clicking the sky.
 	// The 'm_' at the start is just a naming convention so you can tell it's not just a 'local' variable
 	int m_timesClickedSky = 0;
 	bool m_bedRoomDoorUnlocked = false;
+	bool m_doorKnobUsedOnDoor = false;
 	// enums like this are a nice way of keeping track of what's happened in a room
-	enum eThingsYouveDone { Start, InsultedChimp, EatenSandwich, LoadedCrossbow, AttackedFlyingNun, PhonedAlbatross}
+	enum eThingsYouveDone { Start, InsultedChimp, EatenSandwich, LoadedCrossbow, AttackedFlyingNun, PhonedAlbatross, DoorKnobUsedOnDoor}
 	eThingsYouveDone m_thingsDone = eThingsYouveDone.Start;
+	
+	
+	
 	IEnumerator OnInteractHotspotDoorToKitchen( IHotspot hotspot )
 	{
 		yield return C.WalkToClicked();
@@ -37,9 +41,24 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 
 	IEnumerator OnUseInvHotspotDoorToKitchen( IHotspot hotspot, IInventory item )
 	{
-		
+		
+		if ( item == I.DoorKnob)
+		{
+			yield return C.WalkToClicked();
+			yield return C.FaceClicked();
+			yield return C.Display("MainChar pushes the doorknob into the hole hearing a clunk");
+			m_doorKnobUsedOnDoor = true;
+			Prop("DoorKnobForDoor").Enable();
+			yield return E.Wait(1);
+			yield return E.WaitSkip();
+			yield return C.MainChar.FaceDown();
+			yield return E.WaitSkip();
+			yield return C.MainChar.Say("Yaay!");
+			I.DoorKnob.Remove();
+		}
+		
 		// NB: You need to check they used the correct item!
-		if ( item == I.Active )
+		if ( item == I.Key & m_doorKnobUsedOnDoor == true )
 		{
 			yield return C.WalkToClicked();
 			yield return C.FaceClicked();
@@ -53,7 +72,10 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 			yield return C.MainChar.FaceDown();
 			yield return E.WaitSkip();
 			yield return C.MainChar.Say("Yaay!");
+			I.Key.Remove();
 		}
+		
+		
 		
 		yield return E.Break;
 	}
@@ -110,6 +132,11 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 
 	void OnEnterRoom()
 	{
+		
+		if(m_doorKnobUsedOnDoor == false)
+		{
+			Prop("DoorKnobForDoor").Disable();
+		}
 	}
 
 	IEnumerator OnLookAtHotspotRuneInteraction( IHotspot hotspot )
@@ -145,6 +172,13 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 	IEnumerator OnLookAtPropKey( IProp prop )
 	{
 
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractPropDoorKnob( IProp prop )
+	{
+		prop.Disable();
+		I.DoorKnob.AddAsActive();
 		yield return E.Break;
 	}
 }

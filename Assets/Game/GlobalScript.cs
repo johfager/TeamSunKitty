@@ -31,7 +31,7 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 	/// All variables like this in Quest Scripts are automatically saved
 	public bool m_spokeToBarney = false;
 	public bool m_bedRoomDoorUnlocked = false;
-	
+	public bool m_doorKnobUsedOnDoor = false;
 	////////////////////////////////////////////////////////////////////////////////////
 	// Global Game Functions
 	
