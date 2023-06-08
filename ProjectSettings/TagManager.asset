@@ -53,3 +53,6 @@ TagManager:
   - name: Pop
     uniqueID: 1427032521
     locked: 0
+  - name: Char
+    uniqueID: 3304769847
+    locked: 0
