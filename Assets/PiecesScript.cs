@@ -38,46 +38,42 @@ bool isPlaced= false; //will update to check if registered correct placement
             isPlaced= true; //register as placed
             puzzleManager.numCompleted++;
 
-            //visible effect showing it's correct
 
         }
     }
-   private void OnMouseDown()
-   {
+    private void OnMouseDown()
+    {
     //rotate clicked piece
     //transform.Rotate(new Vector3(0,0,90)); //orig
     //youtube check fix from random assortment won't be checked correctly
     //don't rotate correct ones
-    if (isPlaced==false) //not working yet
-    {
-        transform.Rotate(0,0,90);
-        transform.eulerAngles= new Vector3(0,0,Mathf.Round(transform.eulerAngles.z));
-    }
+        if (isPlaced==false) //not working yet
+        {
+            transform.Rotate(0,0,90);
+            transform.eulerAngles= new Vector3(0,0,Mathf.Round(transform.eulerAngles.z));
+        }
+
+
+          // check if right rotation
+        //modified with yt
     
+        if(transform.eulerAngles.z==correctRotation && isPlaced== false) 
+        {
+            isPlaced= true; //register as placed
+            //change sprite
+            spriteRenderer.sprite = newSprite; 
 
-    // check if right rotation
-    //modified with yt
-    
-    if(transform.eulerAngles.z==correctRotation && isPlaced== false) 
-    {
-        isPlaced= true; //register as placed
-        //change sprite
-         spriteRenderer.sprite = newSprite; 
+            
+            //numCompleted+=1;
+            // print(PuzzleManager.numCompleted);
+            puzzleManager.numCompleted++;
 
-        
-         //numCompleted+=1;
-        // print(PuzzleManager.numCompleted);
-        puzzleManager.numCompleted++;
+            //visible effect showing it's correct
 
-        //visible effect showing it's correct
+        }
+
 
     }
-    else if(isPlaced== true)
-    {
-        isPlaced=false;
-    }
 
-    //check if puzzle is finished
-    // give key or make interactable prop appear
-   }
+   
 }

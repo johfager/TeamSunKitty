@@ -10,7 +10,7 @@ public class RoomBedroomPuzzle : RoomScript<RoomBedroomPuzzle>
 
 	IEnumerator OnInteractPropBedroomKey( IProp prop )
 	{
-
+		I.Key.AddAsActive();
 		yield return E.Break;
 	}
 
@@ -23,6 +23,28 @@ public class RoomBedroomPuzzle : RoomScript<RoomBedroomPuzzle>
 	IEnumerator OnUseInvPropBedroomKey( IProp prop, IInventory item )
 	{
 		yield return C.MainChar.Say("I'm not sure if I should use this...");
+		yield return E.Break;
+	}
+
+	IEnumerator OnEnterRoomAfterFade()
+	{
+
+		yield return E.Break;
+	}
+
+	void OnEnterRoom()
+	{
+	}
+
+	IEnumerator OnInteractPropBackground( IProp prop )
+	{
+
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractPropBackToBedroom( IProp prop )
+	{
+		C.Player.Room=R.Bedroom;
 		yield return E.Break;
 	}
 }

@@ -82,7 +82,8 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 	IEnumerator OnInteractHotspotRuneInteraction( IHotspot hotspot )
 	{
 		yield return C.MainChar.Say("What is this? Why does it look so familiar...");
-		yield return C.Display(" Yes, you are 'using' this rune");
+		yield return C.WalkToClicked();
+		C.Player.Room=R.BedroomPuzzle;
 		yield return E.Break;
 	}
 
