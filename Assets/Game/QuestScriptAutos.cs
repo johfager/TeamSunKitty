@@ -16,6 +16,7 @@ namespace PowerScript
 		public static ICharacter Dave           { get { return PowerQuest.Get.GetCharacter("Dave"); } }
 		public static ICharacter Barney         { get { return PowerQuest.Get.GetCharacter("Barney"); } }
 		public static ICharacter MainChar       { get { return PowerQuest.Get.GetCharacter("MainChar"); } }
+		public static ICharacter Kettil         { get { return PowerQuest.Get.GetCharacter("Kettil"); } }
 		// #CHARS# - Do not edit this line, it's used by the system to insert characters
 	}
 
@@ -24,7 +25,9 @@ namespace PowerScript
 		// Access to specific Inventory (Auto-generated)
 		public static IInventory Bucket         { get { return PowerQuest.Get.GetInventory("Bucket"); } }
 		public static IInventory Key            { get { return PowerQuest.Get.GetInventory("Key"); } }
+
 		public static IInventory DoorKnob       { get { return PowerQuest.Get.GetInventory("DoorKnob"); } }
+
 		public static IInventory Matches        { get { return PowerQuest.Get.GetInventory("Matches"); } }
 		// #INVENTORY# - Do not edit this line, it's used by the system to insert rooms for easy access
 	}
@@ -41,6 +44,7 @@ namespace PowerScript
 		public static IGui InventoryBar   { get { return PowerQuest.Get.GetGui("InventoryBar"); } }
 		public static IGui Options        { get { return PowerQuest.Get.GetGui("Options"); } }
 		public static IGui Save           { get { return PowerQuest.Get.GetGui("Save"); } }
+		public static IGui Creatorbox     { get { return PowerQuest.Get.GetGui("Creatorbox"); } }
 		// #GUI# - Do not edit this line, it's used by the system to insert rooms for easy access
 	}
 
@@ -55,7 +59,13 @@ namespace PowerScript
 		public static IRoom PipesPuzzle    { get { return PowerQuest.Get.GetRoom("PipesPuzzle"); } }
 		public static IRoom BedroomPuzzle  { get { return PowerQuest.Get.GetRoom("BedroomPuzzle"); } }
 		public static IRoom StateExperimentRoom { get { return PowerQuest.Get.GetRoom("StateExperimentRoom"); } }
+		public static IRoom LitLivingRoom  { get { return PowerQuest.Get.GetRoom("LitLivingRoom"); } }
+		public static IRoom StateStartRoom { get { return PowerQuest.Get.GetRoom("StateStartRoom"); } }
 		public static IRoom LitKitchen     { get { return PowerQuest.Get.GetRoom("LitKitchen"); } }
+		public static IRoom EndScene       { get { return PowerQuest.Get.GetRoom("EndScene"); } }
+		public static IRoom KitchenNewspaper { get { return PowerQuest.Get.GetRoom("KitchenNewspaper"); } }
+		public static IRoom Titlescreen    { get { return PowerQuest.Get.GetRoom("Titlescreen"); } }
+		public static IRoom CreditsScreen  { get { return PowerQuest.Get.GetRoom("CreditsScreen"); } }
 		// #ROOM# - Do not edit this line, it's used by the system to insert rooms for easy access
 	}
 

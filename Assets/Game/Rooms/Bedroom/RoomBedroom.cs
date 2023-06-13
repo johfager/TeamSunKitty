@@ -211,6 +211,7 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		yield return E.Break;
 	}
 
+
 	IEnumerator OnInteractPropDoorKnob( IProp prop )
 	{
 		prop.Disable();
@@ -244,7 +245,12 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		yield return E.Break;
 	}
 
-	IEnumerator OnLookAtPropDoorKnob( IProp prop )
+	IEnumerator OnLookAtPropDoorKnob(IProp prop)
+	{
+		yield return E.Break;
+	}
+	IEnumerator OnUseInvHotspotRuneInteraction( IHotspot hotspot, IInventory item )
+
 	{
 
 		yield return E.Break;
