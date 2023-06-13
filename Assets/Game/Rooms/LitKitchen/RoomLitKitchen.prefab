@@ -75,6 +75,8 @@ MonoBehaviour:
     m_points:
     - m_name: Enter
       m_position: {x: -742.4774, y: -177.2581}
+    - m_name: LitSpawnPoint
+      m_position: {x: -212.78612, y: -271.37943}
   m_debugStartFunction: 
   m_hotspotComponents:
   - {fileID: 9182363956472842930}

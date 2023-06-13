@@ -6,7 +6,8 @@ using static GlobalScript;
 
 public class RoomBedroom : RoomScript<RoomBedroom>
 {
-	
+
+	
 	// This area is where you can put variables you want to use for game logic in your room
 	
 	// Here's an example variable, an integer which is used when clicking the sky.
@@ -23,7 +24,7 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		
 		if (m_bedRoomDoorUnlocked == true)
 		{
-			E.ChangeRoomBG(R.LivingRoom);
+			E.ChangeRoomBG(R.UnlitKitchen);
 			C.MainChar.SetPosition(-600, -200);
 		}
 		else
@@ -37,7 +38,8 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 
 	IEnumerator OnUseInvHotspotDoorToKitchen( IHotspot hotspot, IInventory item )
 	{
-		
+
+		
 		// NB: You need to check they used the correct item!
 		if ( item == I.Active )
 		{
