@@ -54,9 +54,6 @@ public class RoomBedroomPuzzle : RoomScript<RoomBedroomPuzzle>
 		yield return E.Break;
 	}
 
-	void OnEnterRoom()
-	{
-	}
 
 	IEnumerator OnInteractPropBackground( IProp prop )
 	{
