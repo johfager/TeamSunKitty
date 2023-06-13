@@ -50,7 +50,7 @@ public class RoomBedroomPuzzle : RoomScript<RoomBedroomPuzzle>
 
 	IEnumerator OnEnterRoomAfterFade()
 	{
-
+		yield return C.Display("They butchered my likeness.");
 		yield return E.Break;
 	}
 

@@ -653,8 +653,7 @@ Transform:
   - {fileID: 8709786893360109179}
   - {fileID: 1428740213603090683}
   m_Father: {fileID: 6741925487111656156}
-
-  m_RootOrder: 3 
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5932124553488528341
 GameObject:
@@ -1333,9 +1332,7 @@ Transform:
   - {fileID: 7599391102236461551}
   - {fileID: 6437371392229033190}
   - {fileID: 5493895783174747012}
-
   - {fileID: 3330960807844276072}
-
   - {fileID: 8433395747143993983}
   - {fileID: 6851434649069819350}
   m_Father: {fileID: 0}
