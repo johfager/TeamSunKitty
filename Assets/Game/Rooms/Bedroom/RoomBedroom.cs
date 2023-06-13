@@ -153,9 +153,8 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 			Prop("RunePuzzleFinished").Disable();
 		
 		}
-		if(Globals.m_runePuzzleFinishedBedRoom == false)
+		if(Globals.m_runePuzzleFinishedBedRoom == false & m_doorKnobUsedOnDoor == false)
 		{
-			C.Display("Doorknob disabled");
 			Prop("DoorKnob").Disable();
 			Prop("RunePuzzleFinished").Disable();
 		
@@ -167,6 +166,7 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 			C.MainChar.MoveTo(Point("PositionAfterPuzzle"));
 			C.MainChar.Enable();
 			Prop("RunePuzzleFinished").Enable();
+			Prop("Cupboard_open").Enable();
 			Prop("DoorKnob").Enable();
 			Hotspot("RuneInteraction").Disable();
 		
@@ -251,6 +251,12 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 	}
 	IEnumerator OnUseInvHotspotRuneInteraction( IHotspot hotspot, IInventory item )
 
+	{
+
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractPropCupboard_open( IProp prop )
 	{
 
 		yield return E.Break;

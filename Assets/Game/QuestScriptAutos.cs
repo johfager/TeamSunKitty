@@ -29,6 +29,7 @@ namespace PowerScript
 		public static IInventory DoorKnob       { get { return PowerQuest.Get.GetInventory("DoorKnob"); } }
 
 		public static IInventory Matches        { get { return PowerQuest.Get.GetInventory("Matches"); } }
+		
 		// #INVENTORY# - Do not edit this line, it's used by the system to insert rooms for easy access
 	}
 

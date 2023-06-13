@@ -130,7 +130,7 @@ MonoBehaviour:
   - {fileID: 114497078864246608, guid: 7a896bee3c107ce49b5aebeb3b5d1b31, type: 3}
   - {fileID: 7139669985106808378, guid: dc282630172d0814584f9160645b3c37, type: 3}
   - {fileID: 1405908946029883219, guid: c80671d97311aa74b800419082862e54, type: 3}
-  - {fileID: 6816809383144456997, guid: 869108ab3ce5b0c4ea54f9aa79b2c112, type: 3}
+  - {fileID: 784508578007127214, guid: 869108ab3ce5b0c4ea54f9aa79b2c112, type: 3}
   m_inventoryAnimations:
   - {fileID: 7400000, guid: 10856a3a6e09a994f876dd16f8272cce, type: 2}
   m_inventorySprites:
