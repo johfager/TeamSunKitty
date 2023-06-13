@@ -1,5 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using PowerScript;
+using PowerTools.Quest;
+using UnityEditor;
 using UnityEngine;
 
 public class PuzzleManager : MonoBehaviour
@@ -40,7 +43,10 @@ public class PuzzleManager : MonoBehaviour
         //Check win condition
         if (numCompleted>=totalPieces)
         {
-            PopItem_key.SetActive(true); //key reward appear at Pop layer
+            QuestScript.Globals.m_runePuzzleFinishedBedRoom = true;
+            C.Player.Room = R.Bedroom;
+            
+                ; //key reward appear at Pop layer
         }
         else
         {

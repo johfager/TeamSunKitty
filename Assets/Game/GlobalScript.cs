@@ -32,6 +32,8 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 	public bool m_spokeToBarney = false;
 	public bool m_bedRoomDoorUnlocked = false;
 	public bool m_doorKnobUsedOnDoor = false;
+	public bool m_runePuzzleFinishedBedRoom = false;
+	
 	////////////////////////////////////////////////////////////////////////////////////
 	// Global Game Functions
 	

@@ -14,6 +14,7 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 	int m_timesClickedSky = 0;
 	bool m_bedRoomDoorUnlocked = false;
 	bool m_doorKnobUsedOnDoor = false;
+	bool m_runePuzzleFinishedBedRoom = false;
 	// enums like this are a nice way of keeping track of what's happened in a room
 	enum eThingsYouveDone { Start, InsultedChimp, EatenSandwich, LoadedCrossbow, AttackedFlyingNun, PhonedAlbatross, DoorKnobUsedOnDoor}
 	eThingsYouveDone m_thingsDone = eThingsYouveDone.Start;
@@ -95,7 +96,9 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 	IEnumerator OnInteractPropRug( IProp prop )
 	{
 		//m_rugInteract = true;
-		
+		yield return C.WalkToClicked();
+		yield return C.MainChar.Say("Looks like there is something under this rug");
+		yield return E.WaitSkip();
 		Prop("Rug").Disable();
 		Hotspot("RuneInteraction").Enable();
 		yield return E.Break;
@@ -103,8 +106,14 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 
 	IEnumerator OnInteractHotspotRuneInteraction( IHotspot hotspot )
 	{
-		yield return C.MainChar.Say("What is this? Why does it look so familiar...");
-		yield return C.Display(" Yes, you are 'using' this rune");
+		yield return C.MainChar.Say("I don't remember seeing this before");
+		yield return E.WaitSkip();
+		yield return C.MainChar.Say("It looks like they can be moved");
+		
+		yield return E.ChangeRoom(R.BedroomPuzzle);
+		
+		
+		
 		yield return E.Break;
 	}
 
@@ -136,7 +145,35 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		if(m_doorKnobUsedOnDoor == false)
 		{
 			Prop("DoorKnobForDoor").Disable();
+			Hotspot("RuneInteraction").Disable();
+			Prop("Key").Disable();
+			Prop("Matches").Disable();
+			Prop("Cupboard_open").Disable();
+			Prop("DoorKnob").Disable();
+			Prop("RunePuzzleFinished").Disable();
+		
 		}
+		if(Globals.m_runePuzzleFinishedBedRoom == false)
+		{
+			C.Display("Doorknob disabled");
+			Prop("DoorKnob").Disable();
+			Prop("RunePuzzleFinished").Disable();
+		
+		}
+		else
+		{
+			C.Display("As the rune shifted into its original place, pieces of the floor could be removed");
+			E.WaitSkip();
+			C.MainChar.MoveTo(Point("PositionAfterPuzzle"));
+			C.MainChar.Enable();
+			Prop("RunePuzzleFinished").Enable();
+			Prop("DoorKnob").Enable();
+			Hotspot("RuneInteraction").Disable();
+		
+		}
+		
+		
+		
 	}
 
 	IEnumerator OnLookAtHotspotRuneInteraction( IHotspot hotspot )
@@ -151,14 +188,13 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		yield return C.Display("Surprise, key was picked up");
 		Audio.Play("Bucket");
 		prop.Disable();
-		I.Key.AddAsActive();
+		I.Key.Add();
 		yield return E.WaitSkip();
 		yield return C.Player.FaceDown();
 		yield return C.MainChar.Say("Yaaay! I got a key! I wish it was a bucket tho :(");
 		yield return E.WaitSkip();
 		yield return C.Display("Access your Inventory from the top of the screen");
 		
-		yield return E.Break;
 		
 		yield return E.Break;
 	}
@@ -178,7 +214,39 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 	IEnumerator OnInteractPropDoorKnob( IProp prop )
 	{
 		prop.Disable();
-		I.DoorKnob.AddAsActive();
+		I.DoorKnob.Add();
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractPropCupboard( IProp prop )
+	{
+		yield return C.MainChar.Say("Something seems to be inside of this cupboard...");
+		yield return C.WalkToClicked();
+		yield return C.FaceClicked();
+		Prop("Cupboard").Disable();
+		Prop("Cupboard_open").Enable();
+		Prop("Key").Enable();
+		Prop("Matches").Enable();
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractPropMatches( IProp prop )
+	{
+		yield return C.WalkToClicked();
+		Audio.Play("Bucket");
+		prop.Disable();
+		I.Matches.Add();
+		yield return E.WaitSkip();
+		yield return C.Player.FaceDown();
+		yield return C.MainChar.Say("A pack of matches? This might come in use later.");
+		yield return E.WaitSkip();
+		
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtPropDoorKnob( IProp prop )
+	{
+
 		yield return E.Break;
 	}
 }

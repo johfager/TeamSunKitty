@@ -19,7 +19,7 @@ public partial class QuestScript
 	protected static QuestSettings Settings { get {return PowerQuest.Get.Settings; } }
 
 	/// Access to the global script.
-	protected static GlobalScript Globals { get { return GlobalScript.Script; } }
+	public static GlobalScript Globals { get { return GlobalScript.Script; } }
 
 	/// Get a hotspot in the current room. Shortcut to as R.Current.GetHotspot(...)
 	protected static IHotspot Hotspot(string name) { return PowerQuest.Get.GetCurrentRoom().GetHotspot(name); }
