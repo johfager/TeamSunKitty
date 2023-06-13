@@ -53,4 +53,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game/Rooms/CreditsScreen/SceneRoomCreditsScreen.unity
     guid: 8c64c09ae8a0c43778d2cb1e758e5e8a
+  - enabled: 1
+    path: Assets/Game/Rooms/UnlitKitchen/SceneRoomUnlitKitchen.unity
+    guid: 9bfb293583f0f47fd9607b78ebe4d4d9
   m_configObjects: {}

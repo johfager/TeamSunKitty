@@ -26,8 +26,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4557558782883027807}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 9.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -47,9 +48,12 @@ MonoBehaviour:
   m_baseline: 0
   m_visible: 1
   m_targetCharacter: 
+  m_reverseOrder: 0
+  m_itemCursor: 
   m_itemPrefab: {fileID: 0}
   m_buttonScrollBack: {fileID: 0}
   m_buttonScrollForward: {fileID: 0}
+  m_mask: {fileID: 0}
 --- !u!114 &5265485779176328983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,8 +66,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09dd368ab6c385740a7607115c8e009f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_cellSize: {x: 15, y: 15}
-  m_columnsPerRow: 4
-  m_scrollColumns: 0
-  m_scrollRows: 4
+  m_autoLayoutChildren: 0
+  m_itemSpacing: {x: 29.5, y: 16.08}
+  m_columnsPerRow: 0
+  m_scrollColumns: 5
+  m_scrollRows: 1
+  m_overdraw: {x: 0, y: 0}
   m_items: []
+  m_size: {x: 168, y: 16}

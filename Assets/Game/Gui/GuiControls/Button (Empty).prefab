@@ -242,9 +242,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8452186191037450529}
+  - component: {fileID: 4679593218126881981}
   - component: {fileID: 5127923685464427030}
   - component: {fileID: 4181900369375888617}
-  - component: {fileID: 4679593218126881981}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -267,6 +267,34 @@ Transform:
   m_Father: {fileID: 7425424497749739758}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4679593218126881981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8119658609420480027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99f5801e9ab1722449b271233da6c14c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_text: 
+  m_localize: 0
+  m_sortingLayer: Gui
+  m_orderInLayer: 35670
+  m_wrapWidth: 0
+  m_truncate: 0
+  m_wrapUniformLineWidth: 0
+  m_wrapWidthMin: 0
+  m_keepOnScreen: 0
+  m_shaderOverride: {fileID: 0}
+  m_outline:
+    m_directions: 0
+    m_width: 1
+    m_color: {r: 0, g: 0, b: 0, a: 1}
+  m_unlocalizedText: 
+  m_outlineMeshes: []
 --- !u!23 &5127923685464427030
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -331,31 +359,3 @@ TextMesh:
   m_Color:
     serializedVersion: 2
     rgba: 4291258937
---- !u!114 &4679593218126881981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8119658609420480027}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99f5801e9ab1722449b271233da6c14c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_text: 
-  m_localize: 0
-  m_sortingLayer: Gui
-  m_orderInLayer: 35670
-  m_wrapWidth: 0
-  m_truncate: 0
-  m_wrapUniformLineWidth: 0
-  m_wrapWidthMin: 0
-  m_keepOnScreen: 0
-  m_shaderOverride: {fileID: 0}
-  m_outline:
-    m_directions: 0
-    m_width: 1
-    m_color: {r: 0, g: 0, b: 0, a: 1}
-  m_unlocalizedText: 
-  m_outlineMeshes: []
