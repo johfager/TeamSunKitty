@@ -50,9 +50,15 @@ SpriteAtlas:
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: c56d6dd27fd264d45aa2b5c01c93c9e5, type: 3}
+  - {fileID: 21300000, guid: 48b7f75a5cf01cc4c94b09a685a9ba4f, type: 3}
   - {fileID: 21300000, guid: 3128a95e76c6adf44a7ffde8daa56743, type: 3}
+  - {fileID: 21300000, guid: 8bc0d33ff789a94438372a5ccbe1a2a7, type: 3}
   m_PackedSpriteNamesToIndex:
+  - DoorKnob_0
+  - Key_0
   - Bucket_0
+  - Matches_0
   m_RenderDataMap: {}
   m_Tag: InventoryAtlas
   m_IsVariant: 0

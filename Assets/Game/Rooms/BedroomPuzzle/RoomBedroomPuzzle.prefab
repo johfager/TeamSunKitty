@@ -653,7 +653,8 @@ Transform:
   - {fileID: 8709786893360109179}
   - {fileID: 1428740213603090683}
   m_Father: {fileID: 6741925487111656156}
-  m_RootOrder: 4
+
+  m_RootOrder: 3 
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5932124553488528341
 GameObject:
@@ -1326,13 +1327,15 @@ Transform:
   m_GameObject: {fileID: 7384138906992139540}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.35, y: 2.35, z: 2.35}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7599391102236461551}
   - {fileID: 6437371392229033190}
   - {fileID: 5493895783174747012}
+
   - {fileID: 3330960807844276072}
+
   - {fileID: 8433395747143993983}
   - {fileID: 6851434649069819350}
   m_Father: {fileID: 0}
@@ -1352,7 +1355,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_data:
     m_description: BedroomPuzzle
-    m_playerVisible: 1
+    m_playerVisible: 0
     m_verticalResolution: 0
     m_activeWalkableArea: 0
     m_bounds:
@@ -1728,7 +1731,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1427032521
   m_SortingLayer: 4
-  m_SortingOrder: 630
+  m_SortingOrder: 1386
   m_Sprite: {fileID: 21300000, guid: fe089725226c04e0ea812e8d965c9383, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

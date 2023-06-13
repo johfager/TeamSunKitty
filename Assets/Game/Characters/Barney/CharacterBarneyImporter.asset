@@ -61,7 +61,7 @@ MonoBehaviour:
   m_spriteMeshType: 1
   m_crunchedCompression: 0
   m_sourcePSD: Art/CharBarney.ase
-  m_sourceDirectory: Art/Export
+  m_sourceDirectory: C:\Users\johan\OneDrive\Skrivbord
   m_deleteImportedPngs: 1
   m_spriteDirectory: Sprites
   m_gui: 0

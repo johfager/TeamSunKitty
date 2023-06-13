@@ -51,24 +51,38 @@ SpriteAtlas:
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 3b41cf420eabd1945a19febaced3e9e1, type: 3}
-  - {fileID: 21300000, guid: 8cb52ea232104ae4b8634e1d66f4dba8, type: 2}
-  - {fileID: 21300000, guid: 2a4f287326733da4ea083211cb24306d, type: 3}
   - {fileID: 21300000, guid: b8256b94676a2b74b917abc62da5d592, type: 3}
   - {fileID: 21300000, guid: dc0b37765d7c6b74d8f249da499305f1, type: 3}
+  - {fileID: 21300000, guid: a0691818822f0e64b8d23e7153c1e450, type: 3}
+  - {fileID: 21300000, guid: a5661e98c7211d14895d839cf2d8b688, type: 3}
+  - {fileID: 21300000, guid: fdcc9ae8268684f94a5f0100f851a83b, type: 3}
   - {fileID: 21300000, guid: 1a31ede8c8806554eb6df4584c61e7d2, type: 3}
   - {fileID: 21300000, guid: c7e0a1f82cae4fb4bb5fa0cdc3a4b0f5, type: 3}
+  - {fileID: 21300000, guid: da66e22ae6efc415d96dd96d6ad31f1a, type: 3}
+  - {fileID: 21300000, guid: 1b01e7ab46914c24986ef5314bf398a9, type: 3}
   - {fileID: 21300000, guid: f4921fabdb0a37f4896cbef1cce10276, type: 3}
+  - {fileID: 21300000, guid: 37fd313c309a6c74283c994036644132, type: 3}
+  - {fileID: 21300000, guid: 2b9e353c83ab163478041c7c5a4c3f44, type: 3}
   - {fileID: 21300000, guid: 5ca4da4e5a938ef40a0274f47bcf78d1, type: 3}
+  - {fileID: 21300000, guid: d17fd46e8f6862a4391c52e269e0fe92, type: 3}
+  - {fileID: 21300000, guid: 8683813fe03cdc34e8d1617ecb7c7efe, type: 3}
   m_PackedSpriteNamesToIndex:
   - AssembledScene_OBS_ONLY_USE_AS_REFERENCE
-  - Bucket_0
-  - Bucket_0
   - Rug
   - Bedroom_background_3840x2160
+  - Floorplank-finished puzzle
+  - Matches
+  - Bedroom-floor rune solved-NOT DOORKNOB
   - Bed
   - BedRoom
+  - Bedroom-no doorknob -+unsolved rune puzzle floor
+  - Cubbard-opened
   - Window
+  - Doorknob
+  - Cubbard-closed
   - Flower-wase
+  - Bedroom background
+  - Key-
   m_RenderDataMap: {}
   m_Tag: RoomBedroomAtlas
   m_IsVariant: 0

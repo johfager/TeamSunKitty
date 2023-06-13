@@ -21,7 +21,7 @@ MonoBehaviour:
     m_frameDurations: 64000000
   - m_name: TalkR
     m_firstFrame: 2
-    m_loop: 0
+    m_loop: 1
     m_fullRect: 0
     m_length: 3
     m_frameDurations: 640000006400000064000000
@@ -51,7 +51,7 @@ MonoBehaviour:
     m_frameDurations: 64000000640000006400000064000000
   - m_name: IdleU
     m_firstFrame: 16
-    m_loop: 0
+    m_loop: 1
     m_fullRect: 0
     m_length: 1
     m_frameDurations: 64000000
@@ -79,7 +79,7 @@ MonoBehaviour:
   m_spriteMeshType: 1
   m_crunchedCompression: 0
   m_sourcePSD: Art/CharDave.ase
-  m_sourceDirectory: C:\Users\Duzz\Desktop
+  m_sourceDirectory: Art/Export
   m_deleteImportedPngs: 1
   m_spriteDirectory: Sprites
   m_gui: 0

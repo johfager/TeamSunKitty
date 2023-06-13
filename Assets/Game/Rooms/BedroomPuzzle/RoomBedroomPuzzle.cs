@@ -10,7 +10,8 @@ public class RoomBedroomPuzzle : RoomScript<RoomBedroomPuzzle>
 
 	IEnumerator OnInteractPropBedroomKey( IProp prop )
 	{
-		I.Key.AddAsActive();
+
+		yield return E.ChangeRoom(R.Bedroom);
 		yield return E.Break;
 	}
 
@@ -23,6 +24,27 @@ public class RoomBedroomPuzzle : RoomScript<RoomBedroomPuzzle>
 	IEnumerator OnUseInvPropBedroomKey( IProp prop, IInventory item )
 	{
 		yield return C.MainChar.Say("I'm not sure if I should use this...");
+		yield return E.Break;
+	}
+
+	void Update()
+	{
+
+		I.Key.AddAsActive();
+
+	}
+
+
+
+	void OnEnterRoom()
+	{
+	}
+
+	IEnumerator OnInteractPropWinCondition( IProp prop )
+	{
+		if(Globals.m_runePuzzleFinishedBedRoom == true){
+			yield return E.ChangeRoom(R.Bedroom);
+		}
 		yield return E.Break;
 	}
 

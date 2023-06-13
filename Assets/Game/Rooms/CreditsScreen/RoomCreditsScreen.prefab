@@ -50,7 +50,7 @@ Canvas:
   m_GameObject: {fileID: 69911061284452241}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -128,8 +128,8 @@ Transform:
   m_GameObject: {fileID: 1973002607800149423}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.35, y: 2.35, z: 2.35}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3593245842533103072}
   - {fileID: 2580151294945909509}
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_data:
     m_description: CreditsScreen
-    m_playerVisible: 1
+    m_playerVisible: 0
     m_verticalResolution: 0
     m_activeWalkableArea: 0
     m_bounds:
@@ -282,8 +282,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -741, y: -360}
-  m_SizeDelta: {x: 601.5836, y: 77.6954}
+  m_AnchoredPosition: {x: 0, y: 122}
+  m_SizeDelta: {x: 601.5836, y: 105.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1225150188077392606
 CanvasRenderer:
@@ -566,7 +566,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -835, y: -457}
+  m_AnchoredPosition: {x: -100, y: -25}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6851623453225371110

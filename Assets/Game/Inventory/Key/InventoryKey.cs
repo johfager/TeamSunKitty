@@ -14,7 +14,7 @@ public class InventoryKey : InventoryScript<InventoryKey>
 		
 		yield return E.Break;
 	}
-
+	
 	IEnumerator OnInteractInventory( IInventory thisItem )
 	{
 
@@ -23,6 +23,7 @@ public class InventoryKey : InventoryScript<InventoryKey>
 
 	IEnumerator OnUseInvInventory( IInventory thisItem, IInventory item )
 	{
+
 
 		yield return E.Break;
 	}
