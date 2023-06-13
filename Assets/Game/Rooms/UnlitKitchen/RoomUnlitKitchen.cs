@@ -34,14 +34,6 @@ public class RoomUnlitKitchen : RoomScript<RoomUnlitKitchen>
 
 	IEnumerator OnInteractPropMatchBox( IProp prop )
 	{
-		yield return C.WalkToClicked();
-		yield return C.FaceClicked();
-		yield return C.Display("You found some matches!");
-		I.Matches.AddAsActive();
-		prop.Disable();
-		yield return E.WaitSkip();
-		yield return C.MainChar.Say("Ooh, maybe I could burn the beast?");
-		yield return C.Display("You quickly abolish the thought.");
 		yield return E.Break;
 	}
 
@@ -98,6 +90,16 @@ public class RoomUnlitKitchen : RoomScript<RoomUnlitKitchen>
 		yield return C.Display("Looks like a fireplace.");
 		yield return C.MainChar.Say("A sinister one, sure.");
 		yield return C.MainChar.Say("Maybe I could light it somehow.");
+		yield return E.Break;
+	}
+
+	void OnEnterRoom()
+	{
+	}
+
+	IEnumerator OnInteractHotspotDoorToBedroom( IHotspot hotspot )
+	{
+		yield return E.ChangeRoom(R.Bedroom);
 		yield return E.Break;
 	}
 }

@@ -29,9 +29,8 @@ public class RoomBedroomPuzzle : RoomScript<RoomBedroomPuzzle>
 
 	void Update()
 	{
-
-		I.Key.AddAsActive();
-
+		
+		
 	}
 
 
