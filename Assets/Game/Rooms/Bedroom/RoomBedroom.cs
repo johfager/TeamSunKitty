@@ -101,6 +101,7 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		yield return C.WalkToClicked();
 		yield return C.MainChar.Say("Looks like there is something under this rug");
 		yield return E.WaitSkip();
+		//above is dif add
 		Prop("Rug").Disable();
 		Hotspot("RuneInteraction").Enable();
 		yield return E.Break;
@@ -178,73 +179,11 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		
 	}
 
-	IEnumerator OnLookAtHotspotRuneInteraction( IHotspot hotspot )
-	{
-
-		yield return E.Break;
-	}
 
 
-	IEnumerator OnInteractPropBackground( IProp prop )
-	{
 
-		yield return E.Break;
-	}
 
-	IEnumerator OnLookAtPropBed( IProp prop )
-	{
 
-		yield return E.Break;
-	}
-
-	IEnumerator OnInteractPropRug( IProp prop )
-	{
-		//m_rugInteract = true;
-		
-		Prop("Rug").Disable();
-		Hotspot("RuneInteraction").Enable();
-		yield return E.Break;
-	}
-
-	IEnumerator OnInteractHotspotRuneInteraction( IHotspot hotspot )
-	{
-		yield return C.MainChar.Say("What is this? Why does it look so familiar...");
-		yield return C.WalkToClicked();
-		C.Player.Room=R.BedroomPuzzle;
-		yield return E.Break;
-	}
-
-	IEnumerator OnEnterRoomAfterFade()
-	{
-		// Put things here that happen when you enter a room
-		
-		if ( FirstTimeVisited && EnteredFromEditor == false ) // Only run this part the first time you visit, and not when debugging
-		{
-			yield return C.MainChar.Say("Well, I guess this is a bedroom lol");
-			yield return C.MainChar.WalkTo(Point("EntryWalk"));
-			yield return C.MainChar.Say("Sure looks like a bed to me!");
-			Audio.PlayMusic("MusicExample");
-		
-			yield return C.Display("Left Click to Walk & Interact\nRight Click to Look At");
-		}
-		yield return E.Break;
-	}
-
-	IEnumerator OnInteractPropBed( IProp prop )
-	{
-		yield return C.Display("Yes, you are seeing things correctly. This is a sprillans new IKEA model BengtOlof");
-		yield return E.Break;
-	}
-
-	void OnEnterRoom()
-	{
-	}
-
-	IEnumerator OnLookAtHotspotRuneInteraction( IHotspot hotspot )
-	{
-
-		yield return E.Break;
-	}
 
 
 	IEnumerator OnInteractPropKey( IProp prop )
@@ -264,17 +203,7 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		yield return E.Break;
 	}
 
-	IEnumerator OnLookAtHotspotDoorToKitchen( IHotspot hotspot )
-	{
-
-		yield return E.Break;
-	}
-
-	IEnumerator OnLookAtPropKey( IProp prop )
-	{
-
-		yield return E.Break;
-	}
+	
 
 
 	IEnumerator OnInteractPropDoorKnob( IProp prop )
@@ -314,16 +243,5 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 	{
 		yield return E.Break;
 	}
-	IEnumerator OnUseInvHotspotRuneInteraction( IHotspot hotspot, IInventory item )
 
-	{
-
-		yield return E.Break;
-	}
-
-	IEnumerator OnInteractPropCupboard_open( IProp prop )
-	{
-
-		yield return E.Break;
-	}
 }
