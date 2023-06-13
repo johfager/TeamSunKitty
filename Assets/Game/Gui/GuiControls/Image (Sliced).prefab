@@ -149,7 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_baseline: 0
   m_visible: 1
-  m_anim: 
+  m_anim: Inventory
   m_customSize:
     m_min: {x: 0, y: 0}
     m_max: {x: 0, y: 0}

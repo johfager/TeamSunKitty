@@ -10,20 +10,7 @@ public class RoomKitchenNewspaper : RoomScript<RoomKitchenNewspaper>
 
 	IEnumerator OnEnterRoomAfterFade()
 	{
-		yield return C.Display("Long ago by Storsjön shore");
-		yield return C.Display("Trolls Jata and Kata whose cauldron bore");
-		yield return C.Display("A boiling brew they curiously tend");
-		yield return C.Display("Ingredients galore holding no end");
 		
-		yield return C.Display("One day the cauldron shouted a cry");
-		yield return C.Display("A serpent, a creature, a cat head held high");
-		yield return C.Display("It vanishe in waters growing in might");
-		yield return C.Display("Eyes avert, true horror in sight");
-		
-		yield return C.Display("By the hands of a wizard the creature spellbound");
-		yield return C.Display("Imprisoned in a watery rest unsound.");
-		yield return C.Display("Stone raised, Magic concealed");
-		yield return C.Display("Decipher, set free, wield");
 		yield return E.Break;
 	}
 
@@ -39,5 +26,30 @@ public class RoomKitchenNewspaper : RoomScript<RoomKitchenNewspaper>
 	{
 		
 		yield return E.Break;
+	}
+
+	IEnumerator OnInteractHotspotArticleBeast( IHotspot hotspot )
+	{
+		yield return C.Display("Hotspot article beasts");
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractHotspotArticleDeaths( IHotspot hotspot )
+	{
+		yield return C.Display("Hotspot article deaths");
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractPropNewspaper( IProp prop )
+	{
+		yield return C.Display("By the hands of a wizard, the creature spellbound");
+		yield return C.Display("Imprisoned in waters, its sleeps unsound");
+		yield return C.Display("Stone raised upwards of magic sail");
+		yield return C.Display("They who decipher will lift the veil");
+		
+		yield return E.Break;
+		
+		
+		
 	}
 }

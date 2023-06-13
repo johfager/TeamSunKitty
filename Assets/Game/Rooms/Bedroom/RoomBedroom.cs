@@ -18,9 +18,7 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 	// enums like this are a nice way of keeping track of what's happened in a room
 	enum eThingsYouveDone { Start, InsultedChimp, EatenSandwich, LoadedCrossbow, AttackedFlyingNun, PhonedAlbatross, DoorKnobUsedOnDoor}
 	eThingsYouveDone m_thingsDone = eThingsYouveDone.Start;
-	
-	
-	
+
 	IEnumerator OnInteractHotspotDoorToKitchen( IHotspot hotspot )
 	{
 		yield return C.WalkToClicked();
@@ -28,7 +26,9 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		
 		if (m_bedRoomDoorUnlocked == true)
 		{
-			E.ChangeRoomBG(R.LitKitchen);
+
+			E.ChangeRoomBG(R.UnlitKitchen);
+
 			C.MainChar.SetPosition(-600, -200);
 		}
 		else
@@ -42,6 +42,7 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 
 	IEnumerator OnUseInvHotspotDoorToKitchen( IHotspot hotspot, IInventory item )
 	{
+
 		
 		if ( item == I.DoorKnob)
 		{
@@ -57,6 +58,7 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 			yield return C.MainChar.Say("Yaay!");
 			I.DoorKnob.Remove();
 		}
+
 		
 		// NB: You need to check they used the correct item!
 		if ( item == I.Key & m_doorKnobUsedOnDoor == true )
@@ -181,6 +183,69 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 
 		yield return E.Break;
 	}
+
+
+	IEnumerator OnInteractPropBackground( IProp prop )
+	{
+
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtPropBed( IProp prop )
+	{
+
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractPropRug( IProp prop )
+	{
+		//m_rugInteract = true;
+		
+		Prop("Rug").Disable();
+		Hotspot("RuneInteraction").Enable();
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractHotspotRuneInteraction( IHotspot hotspot )
+	{
+		yield return C.MainChar.Say("What is this? Why does it look so familiar...");
+		yield return C.WalkToClicked();
+		C.Player.Room=R.BedroomPuzzle;
+		yield return E.Break;
+	}
+
+	IEnumerator OnEnterRoomAfterFade()
+	{
+		// Put things here that happen when you enter a room
+		
+		if ( FirstTimeVisited && EnteredFromEditor == false ) // Only run this part the first time you visit, and not when debugging
+		{
+			yield return C.MainChar.Say("Well, I guess this is a bedroom lol");
+			yield return C.MainChar.WalkTo(Point("EntryWalk"));
+			yield return C.MainChar.Say("Sure looks like a bed to me!");
+			Audio.PlayMusic("MusicExample");
+		
+			yield return C.Display("Left Click to Walk & Interact\nRight Click to Look At");
+		}
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractPropBed( IProp prop )
+	{
+		yield return C.Display("Yes, you are seeing things correctly. This is a sprillans new IKEA model BengtOlof");
+		yield return E.Break;
+	}
+
+	void OnEnterRoom()
+	{
+	}
+
+	IEnumerator OnLookAtHotspotRuneInteraction( IHotspot hotspot )
+	{
+
+		yield return E.Break;
+	}
+
 
 	IEnumerator OnInteractPropKey( IProp prop )
 	{

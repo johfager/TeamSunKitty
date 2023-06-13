@@ -10,7 +10,8 @@ public class RoomBedroomPuzzle : RoomScript<RoomBedroomPuzzle>
 
 	IEnumerator OnInteractPropBedroomKey( IProp prop )
 	{
-		yield return E.ChangeRoom(R.Bedroom);
+
+		yield return E.ChangeRoom(R.Bedroom);
 		yield return E.Break;
 	}
 
@@ -28,13 +29,12 @@ public class RoomBedroomPuzzle : RoomScript<RoomBedroomPuzzle>
 
 	void Update()
 	{
+
+		I.Key.AddAsActive();
+
 	}
 
-	IEnumerator OnInteractPropBackground( IProp prop )
-	{
-		
-		yield return E.Break;
-	}
+
 
 	void OnEnterRoom()
 	{
@@ -45,6 +45,28 @@ public class RoomBedroomPuzzle : RoomScript<RoomBedroomPuzzle>
 		if(Globals.m_runePuzzleFinishedBedRoom == true){
 			yield return E.ChangeRoom(R.Bedroom);
 		}
+		yield return E.Break;
+	}
+
+	IEnumerator OnEnterRoomAfterFade()
+	{
+
+		yield return E.Break;
+	}
+
+	void OnEnterRoom()
+	{
+	}
+
+	IEnumerator OnInteractPropBackground( IProp prop )
+	{
+
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractPropBackToBedroom( IProp prop )
+	{
+		C.Player.Room=R.Bedroom;
 		yield return E.Break;
 	}
 }
