@@ -37,8 +37,16 @@ SpriteAtlas:
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
-  m_PackedSprites: []
-  m_PackedSpriteNamesToIndex: []
+  m_PackedSprites:
+  - {fileID: 21300000, guid: b1b26fb0b9ae4484ebb12d259d6caf33, type: 3}
+  - {fileID: 21300000, guid: ea244bd5c8764442b84d86ea47909f14, type: 3}
+  - {fileID: 21300000, guid: dff5ab4dc2f014f798829b262f5c2727, type: 3}
+  - {fileID: 21300000, guid: 0933bb5ec0a624c5eb1c331324210cf4, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - newspaper_big-2
+  - Background
+  - pexels-cottonbro-studio-3944454
+  - newspaper_big-1
   m_RenderDataMap: {}
   m_Tag: RoomKitchenNewspaperAtlas
   m_IsVariant: 0

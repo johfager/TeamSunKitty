@@ -53,7 +53,7 @@ MonoBehaviour:
     m_dialogDisplay: 0
     m_languageCode: EN
     m_textSpeedMultiplier: 1
-  m_verticalResolution: 1080
+  m_verticalResolution: 2500
   m_snapToPixel: 0
   m_pixelCamEnabled: 0
   m_defaultPixelsPerUnit: 1
@@ -95,7 +95,7 @@ MonoBehaviour:
   m_roomPrefabs:
   - {fileID: 114788632828080210, guid: 908a928d57ccea1418803714fc2b24b8, type: 3}
   - {fileID: 114107578643181592, guid: 815776d2d5a9623498c61578ffc4c1cc, type: 3}
-  - {fileID: 2656053745762178786, guid: 21971dd18b4ad12429fdaf8ea2e51c9a, type: 3}
+  - {fileID: 2656053745762178786, guid: d10dc28dd55228940b1ea66210c68c21, type: 3}
   - {fileID: 4464396677134979534, guid: 956ea1f819617d74e8e61a3d15d8e7d6, type: 3}
   - {fileID: 5379847684618700815, guid: a3d90e97ee8e94bbcb11e075332a8b4a, type: 3}
   - {fileID: 3541315525501641443, guid: 49228d8e2e7d549a78b4707d95fe6f8c, type: 3}
@@ -130,12 +130,15 @@ MonoBehaviour:
   m_inventoryPrefabs:
   - {fileID: 114497078864246608, guid: 7a896bee3c107ce49b5aebeb3b5d1b31, type: 3}
   - {fileID: 7139669985106808378, guid: dc282630172d0814584f9160645b3c37, type: 3}
-  - {fileID: 6085088209273886698, guid: 869108ab3ce5b0c4ea54f9aa79b2c112, type: 3}
+  - {fileID: 1405908946029883219, guid: c80671d97311aa74b800419082862e54, type: 3}
+  - {fileID: 784508578007127214, guid: 869108ab3ce5b0c4ea54f9aa79b2c112, type: 3}
   m_inventoryAnimations:
   - {fileID: 7400000, guid: 10856a3a6e09a994f876dd16f8272cce, type: 2}
   m_inventorySprites:
   - {fileID: 21300000, guid: 3128a95e76c6adf44a7ffde8daa56743, type: 3}
+  - {fileID: 21300000, guid: c56d6dd27fd264d45aa2b5c01c93c9e5, type: 3}
   - {fileID: 21300000, guid: 48b7f75a5cf01cc4c94b09a685a9ba4f, type: 3}
+  - {fileID: 21300000, guid: 8bc0d33ff789a94438372a5ccbe1a2a7, type: 3}
   m_guiAnimations: []
   m_guiSprites:
   - {fileID: 21300000, guid: 6a87f4e540b9ead4ab036f0197dec31e, type: 3}

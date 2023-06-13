@@ -51,9 +51,11 @@ SpriteAtlas:
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: e88b7bc9dfe7a314db0431ae6faae2f6, type: 3}
+  - {fileID: 21300000, guid: 6d9c5e4ad2e644b8f8c228cf9c5d84d1, type: 3}
   - {fileID: 21300000, guid: 1a2ab3fd5685b10489336fb75330da0a, type: 3}
   m_PackedSpriteNamesToIndex:
   - Title_0
+  - startscreen
   - Back_0
   m_RenderDataMap: {}
   m_Tag: RoomTitleAtlas

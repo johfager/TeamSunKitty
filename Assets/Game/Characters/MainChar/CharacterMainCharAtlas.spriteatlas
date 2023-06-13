@@ -39,8 +39,22 @@ SpriteAtlas:
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 7bad6a60b61989e4d868f89f9b46d07a, type: 3}
+  - {fileID: -866472606, guid: 1b064a313bdd925458de3d11bc881503, type: 3}
+  - {fileID: 1664431654, guid: 1b064a313bdd925458de3d11bc881503, type: 3}
+  - {fileID: -815469512, guid: 1b064a313bdd925458de3d11bc881503, type: 3}
+  - {fileID: -1707621530, guid: 1b064a313bdd925458de3d11bc881503, type: 3}
+  - {fileID: 1927898396, guid: 1b064a313bdd925458de3d11bc881503, type: 3}
+  - {fileID: 21300000, guid: 899d9845c2233f346bb1556786d245ae, type: 3}
+  - {fileID: 21300000, guid: fbfd70a774d1bac4f83a5adb3b7af625, type: 3}
   m_PackedSpriteNamesToIndex:
   - result
+  - Walk_R_4
+  - Walk_R_2
+  - Walk_R_3
+  - Walk_R_0
+  - Walk_R_1
+  - Character_Idle-Frame1
+  - Idle_1
   m_RenderDataMap: {}
   m_Tag: CharacterMainCharAtlas
   m_IsVariant: 0

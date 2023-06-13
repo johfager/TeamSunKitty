@@ -37,8 +37,34 @@ SpriteAtlas:
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
-  m_PackedSprites: []
-  m_PackedSpriteNamesToIndex: []
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 4ecfae71c01654412a3e4c27d8cf3cbe, type: 3}
+  - {fileID: 21300000, guid: 59722191d6acb43cd81decbe9365a25c, type: 3}
+  - {fileID: 21300000, guid: 9c8dd834b6d0e48efb377e110068330a, type: 3}
+  - {fileID: 21300000, guid: 9f753db6381454fe2b559916b45f8de9, type: 3}
+  - {fileID: 21300000, guid: 2bcc3f68f6f1c4bd88d552844658f2fa, type: 3}
+  - {fileID: 21300000, guid: 536eefe8dab934e84a6a1e579948688e, type: 3}
+  - {fileID: 21300000, guid: dfddf0ba0ffae45139b16163d9566e35, type: 3}
+  - {fileID: 21300000, guid: a309853bb15d94cc5b42af8d47795be4, type: 3}
+  - {fileID: 21300000, guid: c464f54cdb5a24427a2e274af550e134, type: 3}
+  - {fileID: 21300000, guid: 8d05dd2dbc3d24d7b9845a6fa4773efc, type: 3}
+  - {fileID: 21300000, guid: 520cadcefbfb442d6bd25e1eaed24d92, type: 3}
+  - {fileID: 21300000, guid: d205433f38d3c4a19a7c9563a0365eae, type: 3}
+  - {fileID: 21300000, guid: 57911e3f2cfc542ab93ad9d4d2acab2d, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Window
+  - Woodpile
+  - Mini fridge
+  - Clock
+  - doormat
+  - Fireplace
+  - Table
+  - Cubbard-opened
+  - Kitchen background-LIT
+  - Newspaper
+  - Fire-fork-thing
+  - PieceNewspaper
+  - pots
   m_RenderDataMap: {}
   m_Tag: RoomLitKitchenAtlas
   m_IsVariant: 0
