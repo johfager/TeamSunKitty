@@ -28,7 +28,7 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		
 		if (m_bedRoomDoorUnlocked == true)
 		{
-			E.ChangeRoomBG(R.LivingRoom);
+			E.ChangeRoomBG(R.LitKitchen);
 			C.MainChar.SetPosition(-600, -200);
 		}
 		else

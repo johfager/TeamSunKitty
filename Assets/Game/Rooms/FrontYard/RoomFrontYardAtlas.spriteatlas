@@ -37,8 +37,12 @@ SpriteAtlas:
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
-  m_PackedSprites: []
-  m_PackedSpriteNamesToIndex: []
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 793c01558697b472ab15efb366fa1c96, type: 3}
+  - {fileID: 21300000, guid: 368329a9c60d64302947842378abebbe, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - "orrsj\xF6"
+  - "Draak_\xD6stersund_22jul2006"
   m_RenderDataMap: {}
   m_Tag: RoomFrontYardAtlas
   m_IsVariant: 0
