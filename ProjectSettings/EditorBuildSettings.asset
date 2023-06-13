@@ -41,7 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game/Rooms/LitKitchen/SceneRoomLitKitchen.unity
     guid: f8bc8226f86594f8c9a5c441d2ee3dd4
-  - enabled: 0
+  - enabled: 1
     path: Assets/Game/Rooms/EndScene/SceneRoomEndScene.unity
     guid: 9cf126ee4828e4fe38034bcd56fc1513
   - enabled: 1
