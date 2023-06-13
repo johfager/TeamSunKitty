@@ -277,7 +277,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1067464421
   m_SortingLayer: 3
-  m_SortingOrder: 2980
+  m_SortingOrder: 7003
   m_Sprite: {fileID: 21300000, guid: 2bcc3f68f6f1c4bd88d552844658f2fa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -458,7 +458,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1067464421
   m_SortingLayer: 3
-  m_SortingOrder: 3820
+  m_SortingOrder: 8977
   m_Sprite: {fileID: 21300000, guid: 59722191d6acb43cd81decbe9365a25c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -636,7 +636,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1067464421
   m_SortingLayer: 3
-  m_SortingOrder: -4010
+  m_SortingOrder: -9424
   m_Sprite: {fileID: 21300000, guid: 9f753db6381454fe2b559916b45f8de9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -694,7 +694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: DoorToBedroom
+    m_description: Bedroom
     m_cursor: 
     m_clickable: 1
     m_baseline: -233.7
@@ -898,7 +898,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1427032521
   m_SortingLayer: 4
-  m_SortingOrder: -420
+  m_SortingOrder: -987
   m_Sprite: {fileID: 21300000, guid: 8d05dd2dbc3d24d7b9845a6fa4773efc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -959,7 +959,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: MiniFridge
+    m_description: Mini-Fridge
     m_cursor: 
     m_visible: 1
     m_clickable: 1
@@ -1076,7 +1076,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1067464421
   m_SortingLayer: 3
-  m_SortingOrder: -70
+  m_SortingOrder: -164
   m_Sprite: {fileID: 21300000, guid: 9c8dd834b6d0e48efb377e110068330a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1336,7 +1336,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1067464421
   m_SortingLayer: 3
-  m_SortingOrder: 1080
+  m_SortingOrder: 2538
   m_Sprite: {fileID: 21300000, guid: 520cadcefbfb442d6bd25e1eaed24d92, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1739,7 +1739,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1067464421
   m_SortingLayer: 3
-  m_SortingOrder: -3940
+  m_SortingOrder: -9259
   m_Sprite: {fileID: 21300000, guid: 57911e3f2cfc542ab93ad9d4d2acab2d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1797,7 +1797,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: DoorToTimeskip
+    m_description: Go outside
     m_cursor: 
     m_clickable: 1
     m_baseline: 0
@@ -2399,7 +2399,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1067464421
   m_SortingLayer: 3
-  m_SortingOrder: 860
+  m_SortingOrder: 2021
   m_Sprite: {fileID: 21300000, guid: dfddf0ba0ffae45139b16163d9566e35, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
