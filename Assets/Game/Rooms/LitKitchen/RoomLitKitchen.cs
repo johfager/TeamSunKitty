@@ -44,7 +44,7 @@ public class RoomLitKitchen : RoomScript<RoomLitKitchen>
 
 	IEnumerator OnLookAtHotspotWindow( IHotspot hotspot )
 	{
-		yield return C.Display("“Witness MY domain.”");
+		yield return C.Display("There's big fish out there");
 		yield return E.Break;
 	}
 
