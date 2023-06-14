@@ -23,7 +23,9 @@ public class RoomEndScene : RoomScript<RoomEndScene>
 		yield return C.Display("*Sound for impeding doom playing*");
 		yield return C.Display("“It’ll be your fault! You’ll doom me and everyone here!”");
 		yield return C.Kettil.Say("“NO! WHAT HAVE YOU DONE!?”");
-		Display:
+		yield return E.WaitSkip();
+		yield return E.WaitSkip();
+		yield return E.ChangeRoom(R.CreditsScreen);
 		yield return E.Break;
 	}
 }
