@@ -33,7 +33,7 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		}
 		else
 		{
-			yield return C.MainChar.Say("Hah");
+			yield return C.Ulrika.Say("Hah");
 		}
 		
 		
@@ -253,6 +253,23 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 	IEnumerator OnLookAtPropKey( IProp prop )
 	{
 		yield return C.Display("Stay");
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractPropOminousPaper( IProp prop )
+	{
+		yield return C.Display("Long ago, by Storsjön shore");
+		yield return C.Display("Jata and Kata’s cauldron bore");
+		yield return C.Display("A boiling brew, trolls carefully tend");
+		yield return C.Display("Ingredients galore, holding no end");
+		
+		yield return C.Display("Hark, the cauldron shouted a cry");
+		yield return C.Display("A serpent, a creature, a cat head held high");
+		yield return C.Display("It vanished in waters growing in might");
+		yield return C.Display("Eyes averted, true horror in sight");
+		
+		yield return C.Display("The poem seems to be cut off here…");
+		
 		yield return E.Break;
 	}
 }
