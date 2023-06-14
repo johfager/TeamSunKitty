@@ -230,7 +230,7 @@ public class RoomForest : RoomScript<RoomForest>
 		yield return E.Break;
 	}
 
-	IEnumerator OnInteractCharacterMainChar( ICharacter character )
+	IEnumerator OnInteractCharacterUlrika( ICharacter character )
 	{
 
 		yield return E.Break;

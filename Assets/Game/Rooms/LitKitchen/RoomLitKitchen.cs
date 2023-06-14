@@ -17,7 +17,8 @@ public class RoomLitKitchen : RoomScript<RoomLitKitchen>
 	IEnumerator OnInteractHotspotDoorToBedroom( IHotspot hotspot )
 	{
 		yield return C.WalkToClicked();
-		C.Player.Room=R.Bedroom;
+		Audio.Play("SoundDOOR");
+		yield return E.ChangeRoom(R.Bedroom);
 		yield return E.Break;
 	}
 

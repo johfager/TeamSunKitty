@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CharacterUlrikaAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 3e4f2d1a3657508428a3b151462106db, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 7bad6a60b61989e4d868f89f9b46d07a, type: 3}
+  - {fileID: -866472606, guid: 1b064a313bdd925458de3d11bc881503, type: 3}
+  - {fileID: 1664431654, guid: 1b064a313bdd925458de3d11bc881503, type: 3}
+  - {fileID: -815469512, guid: 1b064a313bdd925458de3d11bc881503, type: 3}
+  - {fileID: -1707621530, guid: 1b064a313bdd925458de3d11bc881503, type: 3}
+  - {fileID: 1927898396, guid: 1b064a313bdd925458de3d11bc881503, type: 3}
+  - {fileID: 21300000, guid: 899d9845c2233f346bb1556786d245ae, type: 3}
+  - {fileID: 21300000, guid: fbfd70a774d1bac4f83a5adb3b7af625, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - result
+  - Walk_R_4
+  - Walk_R_2
+  - Walk_R_3
+  - Walk_R_0
+  - Walk_R_1
+  - Character_Idle-Frame1
+  - Idle_1
+  m_RenderDataMap: {}
+  m_Tag: CharacterMainCharAtlas
+  m_IsVariant: 0

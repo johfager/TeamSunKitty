@@ -17,6 +17,7 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 	
 	/// Just an example of using an enum for game state.
 	/// This can be accessed from other scripts, eg: if ( Globals.m_progressExample == eProgress.DrankWater )...
+	
 	public enum eProgress
 	{
 		None,
@@ -32,12 +33,12 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 	/// All variables like this in Quest Scripts are automatically saved
 	public bool m_spokeToBarney = false;
 	public bool m_bedRoomDoorUnlocked = false;
-
+	
 	public bool m_doorKnobUsedOnDoor = false;
 	public bool m_runePuzzleFinishedBedRoom = false;
-
+	
 	public bool m_livingRoomLit = false;
-
+	
 	
 	////////////////////////////////////////////////////////////////////////////////////
 	// Global Game Functions
