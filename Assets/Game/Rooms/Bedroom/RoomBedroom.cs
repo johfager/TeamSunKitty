@@ -99,7 +99,7 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 	{
 		//m_rugInteract = true;
 		yield return C.WalkToClicked();
-		yield return C.MainChar.Say("Looks like there is something under this rug");
+		yield return C.MainChar.Say("Hrmph...!");
 		yield return E.WaitSkip();
 		//above is dif add
 		Prop("Rug").Disable();
@@ -213,7 +213,6 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 
 	IEnumerator OnInteractPropCupboard( IProp prop )
 	{
-		yield return C.MainChar.Say("Something seems to be inside of this cupboard...");
 		yield return C.WalkToClicked();
 		yield return C.FaceClicked();
 		Prop("Cupboard").Disable();
