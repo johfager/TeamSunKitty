@@ -33,7 +33,7 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		}
 		else
 		{
-			yield return C.Display(" Door seems to be locked");
+			yield return C.MainChar.Say("Hah");
 		}
 		
 		
@@ -48,7 +48,7 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		{
 			yield return C.WalkToClicked();
 			yield return C.FaceClicked();
-			yield return C.Display("MainChar pushes the doorknob into the hole hearing a clunk");
+			yield return C.Display("Nice work Ulrika...");
 			m_doorKnobUsedOnDoor = true;
 			Prop("DoorKnobForDoor").Enable();
 			yield return E.Wait(1);
@@ -65,9 +65,8 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		{
 			yield return C.WalkToClicked();
 			yield return C.FaceClicked();
-			yield return C.Display("MainChar swiftly turns the key hearing a click sound");
+			yield return C.Display("Leaving would be such a shame");
 			Globals.m_progressExample = eProgress.BedRoomUnlocked;
-			yield return C.Dave.Say("Yaaay! I solved the real hard puzzle!");
 			m_bedRoomDoorUnlocked = true;
 		
 			yield return E.Wait(1);
