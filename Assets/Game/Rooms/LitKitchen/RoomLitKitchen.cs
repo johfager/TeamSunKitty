@@ -45,7 +45,7 @@ public class RoomLitKitchen : RoomScript<RoomLitKitchen>
 
 	IEnumerator OnLookAtHotspotWindow( IHotspot hotspot )
 	{
-		yield return C.Display("“Witness MY domain.”");
+		yield return C.Display("There's big fish out there");
 		yield return E.Break;
 	}
 
@@ -69,7 +69,7 @@ public class RoomLitKitchen : RoomScript<RoomLitKitchen>
 
 	IEnumerator OnLookAtPropWoodpile( IProp prop )
 	{
-		yield return C.Display("“Organic but no intellect? Where’s the fun in that?”");
+		yield return C.Display("Organic but no intellect? Where’s the fun in that?");
 		
 		yield return E.Break;
 	}

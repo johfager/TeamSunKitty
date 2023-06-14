@@ -58,8 +58,9 @@ public class RoomUnlitKitchen : RoomScript<RoomUnlitKitchen>
 		yield return C.Ulrika.Say("You don't know me or what I can do!");
 		yield return C.Display("Most humans I've seen don't know pyromancy.");
 		yield return C.Display("And you don't seem THAT special.");
-		yield return C.Ulrika.Say("Fine, be that way!");
-		yield return C.Ulrika.Say("I'll find some tool like a normal human.");
+		//Ulrika: Fine, be that way!
+		//Ulrika: I'll find some tool like a normal human.
+
 		yield return E.Break;
 	}
 
@@ -86,10 +87,8 @@ public class RoomUnlitKitchen : RoomScript<RoomUnlitKitchen>
 
 	IEnumerator OnLookAtPropFireplace( IProp prop )
 	{
-		yield return C.Display("Looking:");
-		yield return C.Display("Looks like a fireplace.");
-		yield return C.Ulrika.Say("A sinister one, sure.");
-		yield return C.Ulrika.Say("Maybe I could light it somehow.");
+		yield return C.Display("How do you feel watching the flames?");
+
 		yield return E.Break;
 	}
 
@@ -102,6 +101,42 @@ public class RoomUnlitKitchen : RoomScript<RoomUnlitKitchen>
 		yield return C.WalkToClicked();
 		Audio.Play("SoundDOOR");
 		yield return E.ChangeRoom(R.Bedroom);
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtPropWoodpile( IProp prop )
+	{
+		yield return C.Display("Organic but no intellect? Where’s the fun in that?");
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractPropWoodpile( IProp prop )
+	{
+		yield return C.Display("You're so boring");
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtHotspotWindow( IHotspot hotspot )
+	{
+		yield return C.Display("Witness MY domain");
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractHotspotWindow( IHotspot hotspot )
+	{
+
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtPropClock( IProp prop )
+	{
+		yield return C.Display("Time. Such a funny concept");
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractPropClock( IProp prop )
+	{
+
 		yield return E.Break;
 	}
 }

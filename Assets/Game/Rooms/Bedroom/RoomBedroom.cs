@@ -33,7 +33,7 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		}
 		else
 		{
-			yield return C.Display(" Door seems to be locked");
+			yield return C.MainChar.Say("Hah");
 		}
 		
 		
@@ -48,7 +48,7 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		{
 			yield return C.WalkToClicked();
 			yield return C.FaceClicked();
-			yield return C.Display("MainChar pushes the doorknob into the hole hearing a clunk");
+			yield return C.Display("Nice work Ulrika...");
 			m_doorKnobUsedOnDoor = true;
 			Prop("DoorKnobForDoor").Enable();
 			yield return E.Wait(1);
@@ -65,9 +65,8 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		{
 			yield return C.WalkToClicked();
 			yield return C.FaceClicked();
-			yield return C.Display("MainChar swiftly turns the key hearing a click sound");
+			yield return C.Display("Leaving would be such a shame");
 			Globals.m_progressExample = eProgress.BedRoomUnlocked;
-			yield return C.Dave.Say("Yaaay! I solved the real hard puzzle!");
 			m_bedRoomDoorUnlocked = true;
 		
 			yield return E.Wait(1);
@@ -91,7 +90,8 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 
 	IEnumerator OnLookAtPropBed( IProp prop )
 	{
-
+		yield return C.Display("Yes, you are seeing things correctly. This is a sprillans new IKEA model BengtOlof");
+		
 		yield return E.Break;
 	}
 
@@ -99,7 +99,9 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 	{
 		//m_rugInteract = true;
 		yield return C.WalkToClicked();
-		yield return C.Ulrika.Say("Looks like there is something under this rug");
+
+		yield return C.Ulrika.Say("Hrmph...!");
+
 		yield return E.WaitSkip();
 		//above is dif add
 		Prop("Rug").Disable();
@@ -138,7 +140,7 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 
 	IEnumerator OnInteractPropBed( IProp prop )
 	{
-		yield return C.Display("Yes, you are seeing things correctly. This is a sprillans new IKEA model BengtOlof");
+		yield return C.Display(" Not now");
 		yield return E.Break;
 	}
 
@@ -189,15 +191,14 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 	IEnumerator OnInteractPropKey( IProp prop )
 	{
 		yield return C.WalkToClicked();
-		yield return C.Display("Surprise, key was picked up");
 		Audio.Play("Bucket");
 		prop.Disable();
 		I.Key.Add();
 		yield return E.WaitSkip();
 		yield return C.Player.FaceDown();
-		yield return C.Ulrika.Say("Yaaay! I got a key! I wish it was a bucket tho :(");
+		yield return C.Ulrika.Say("A key? I'll hold onto this.");
+
 		yield return E.WaitSkip();
-		yield return C.Display("Access your Inventory from the top of the screen");
 		
 		
 		yield return E.Break;
@@ -215,7 +216,7 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 
 	IEnumerator OnInteractPropCupboard( IProp prop )
 	{
-		yield return C.Ulrika.Say("Something seems to be inside of this cupboard...");
+
 		yield return C.WalkToClicked();
 		yield return C.FaceClicked();
 		Prop("Cupboard").Disable();
@@ -233,8 +234,11 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		I.Matches.AddAsActive();
 		prop.Disable();
 		yield return E.WaitSkip();
-		yield return C.Ulrika.Say("Ooh, maybe I could burn the beast?");
-		yield return C.Display("You quickly abolish the thought.");
+		yield return C.Display("Sticks? Are those your grand plan to defeat me? Pathetic.");
+
+		//yield return C.Ulrika.Say("Ooh, maybe I could burn the beast?");
+		//yield return C.Display("You quickly abolish the thought.");
+
 		yield return E.Break;
 		
 		yield return E.Break;
@@ -245,4 +249,10 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		yield return E.Break;
 	}
 
+
+	IEnumerator OnLookAtPropKey( IProp prop )
+	{
+		yield return C.Display("Stay");
+		yield return E.Break;
+	}
 }

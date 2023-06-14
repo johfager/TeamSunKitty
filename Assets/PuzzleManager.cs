@@ -42,6 +42,7 @@ public class PuzzleManager : MonoBehaviour
     {
 
         //Check win condition
+
         if (numCompleted>=totalPieces & !_winConditionTriggered)
         {   
             _winConditionTriggered = true;
@@ -56,7 +57,11 @@ public class PuzzleManager : MonoBehaviour
         SystemAudio.Play(puzzleWinSound);
         yield return new WaitForSeconds(1);
         QuestScript.Globals.m_runePuzzleFinishedBedRoom = true;
-        C.Player.Room = R.Bedroom;
+        //C.Player.Room = R.Bedroom;     instead hide pieces and manually go back. Will preferrably be whole background prop but assets will be updated soon.
+         for( int i=0; i <Pieces.Length; i++)
+            {
+                Pieces[i].SetActive(false); //should hide every rotating piece and showing background, the correct whole image
+            }
         //key reward appear at Pop layer
     }
 }

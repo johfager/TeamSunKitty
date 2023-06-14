@@ -1,3 +1,5 @@
+
+
 using UnityEngine;
 using System.Collections;
 using PowerTools.Quest;
@@ -29,7 +31,9 @@ public class RoomBedroomPuzzle : RoomScript<RoomBedroomPuzzle>
 
 	void Update()
 	{
-		
+
+		
+		
 		
 	}
 
@@ -49,7 +53,7 @@ public class RoomBedroomPuzzle : RoomScript<RoomBedroomPuzzle>
 
 	IEnumerator OnEnterRoomAfterFade()
 	{
-
+		yield return C.Display("They butchered my likeness.");
 		yield return E.Break;
 	}
 
