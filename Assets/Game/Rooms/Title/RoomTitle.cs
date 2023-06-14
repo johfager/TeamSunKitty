@@ -13,7 +13,7 @@ public class RoomTitle : RoomScript<RoomTitle>
 		G.InventoryBar.Hide();
 		G.Toolbar.Hide();
 		// Later we could start some music here
-		SystemAudio.PlayMusic("MusicSlowStrings", 1);
+		Audio.PlayMusic("SoundMain Theme [Mastered]", 1);
 	}
 
 	public IEnumerator OnEnterRoomAfterFade()
@@ -51,9 +51,10 @@ public class RoomTitle : RoomScript<RoomTitle>
 		// Turn on the inventory and info bar now that we're starting a game
 		G.InventoryBar.Show();
 		G.Toolbar.Show();
-		
+		Audio.Stop("SoundMain Theme [Mastered]", 1);
 		// Move the player to the room
 		E.ChangeRoomBG(R.Bedroom);
+		
 		yield return E.ConsumeEvent;
 	}
 

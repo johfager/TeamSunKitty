@@ -66,9 +66,15 @@ MonoBehaviour:
   m_audioCues:
   - {fileID: 11426600, guid: 2c643cf6d170a1845bd86209b6ca496a, type: 3}
   - {fileID: 6715696977301399219, guid: 218be953e8b7c9240bfebae1e967d6fa, type: 3}
+  - {fileID: 1577685348641065929, guid: 150af9a7eec3f3848bf57a0b0e552ced, type: 3}
   - {fileID: 11426600, guid: c6310e800026e2e428019c2a6358d52e, type: 3}
   - {fileID: 114876034982820868, guid: 3b2a729029b4ad04985d489155e1943a, type: 3}
+  - {fileID: 9045980890304397676, guid: 90eebb5a1a5ce104594fe1dfcd6af5c1, type: 3}
   - {fileID: 11426600, guid: 7a3ac0fc4933a4c438c3fa967a310509, type: 3}
   - {fileID: 11426600, guid: 6ace69fdf6921d04aa1a3ae9616a6822, type: 3}
   - {fileID: 11426600, guid: 08c56f42496582a49a839f7213be6ad0, type: 3}
   - {fileID: 11426600, guid: 85d471550f9b57d41bf2b7677dd6a3a0, type: 3}
+  - {fileID: 1365339566347093314, guid: 3d0ed37d16e0a874eae118ca9e6ebdd8, type: 3}
+  - {fileID: 4300562723204908380, guid: 5bcfdb5316ed78c4eb0a1b06807a82ae, type: 3}
+  - {fileID: 4134598921854115870, guid: 0a421debd30469d4191325e6a5269cfd, type: 3}
+  - {fileID: 7540207193006728776, guid: 445e2f789743776449b8783111b33a72, type: 3}
