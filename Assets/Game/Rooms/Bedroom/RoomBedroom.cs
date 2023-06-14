@@ -125,15 +125,15 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 	{
 		// Put things here that happen when you enter a room
 		
-		if ( FirstTimeVisited && EnteredFromEditor == false ) // Only run this part the first time you visit, and not when debugging
-		{
-			yield return C.MainChar.Say("Well, I guess this is a bedroom lol");
-			yield return C.MainChar.WalkTo(Point("EntryWalk"));
-			yield return C.MainChar.Say("Sure looks like a bed to me!");
-			Audio.PlayMusic("MusicExample");
-		
-			yield return C.Display("Left Click to Walk & Interact\nRight Click to Look At");
-		}
+		//if ( FirstTimeVisited && EnteredFromEditor == false ) // Only run this part the first time you visit, and not when debugging
+		//{
+		//	MainChar: Well, I guess this is a bedroom lol
+		//	C.MainChar.WalkTo(Point("EntryWalk"));
+		//	MainChar: Sure looks like a bed to me!
+		//	Audio.PlayMusic("MusicExample");
+		//
+		//	Display: Left Click to Walk & Interact\nRight Click to Look At
+		//}
 		yield return E.Break;
 	}
 
@@ -227,14 +227,15 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 	IEnumerator OnInteractPropMatches( IProp prop )
 	{
 		yield return C.WalkToClicked();
-		Audio.Play("Bucket");
+		yield return C.FaceClicked();
+		yield return C.Display("You found some matches!");
+		I.Matches.AddAsActive();
 		prop.Disable();
-		I.Matches.Add();
-		yield return E.WaitSkip();
-		yield return C.Player.FaceDown();
-		yield return C.MainChar.Say("A pack of matches? This might come in use later.");
 		yield return E.WaitSkip();
 		yield return C.Display("Sticks? Are those your grand plan to defeat me? Pathetic.");
+
+		yield return E.Break;
+		
 		yield return E.Break;
 	}
 

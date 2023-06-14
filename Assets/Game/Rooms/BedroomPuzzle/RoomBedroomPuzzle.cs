@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using System.Collections;
 using PowerTools.Quest;
@@ -30,8 +31,8 @@ public class RoomBedroomPuzzle : RoomScript<RoomBedroomPuzzle>
 	void Update()
 	{
 
-		I.Key.AddAsActive();
-
+		
+		
 	}
 
 

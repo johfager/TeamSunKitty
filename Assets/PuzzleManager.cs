@@ -44,7 +44,11 @@ public class PuzzleManager : MonoBehaviour
         if (numCompleted>=totalPieces)
         {
             QuestScript.Globals.m_runePuzzleFinishedBedRoom = true;
-            C.Player.Room = R.Bedroom;
+            //C.Player.Room = R.Bedroom;
+            for( int i=0; i <Pieces.Length; i++)
+            {
+                Pieces[i].SetActive(false); //should hide every rotating piece and showing background, the correct whole image
+            }
             
                 ; //key reward appear at Pop layer
         }
