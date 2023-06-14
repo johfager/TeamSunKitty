@@ -40,6 +40,7 @@ SpriteAtlas:
   m_PackedSprites:
   - {fileID: 21300000, guid: 4ecfae71c01654412a3e4c27d8cf3cbe, type: 3}
   - {fileID: 21300000, guid: 59722191d6acb43cd81decbe9365a25c, type: 3}
+  - {fileID: 21300000, guid: 9d46cb91432a04fe28306060864375b7, type: 3}
   - {fileID: 21300000, guid: 9c8dd834b6d0e48efb377e110068330a, type: 3}
   - {fileID: 21300000, guid: 9f753db6381454fe2b559916b45f8de9, type: 3}
   - {fileID: 21300000, guid: 2bcc3f68f6f1c4bd88d552844658f2fa, type: 3}
@@ -54,6 +55,7 @@ SpriteAtlas:
   m_PackedSpriteNamesToIndex:
   - Window
   - Woodpile
+  - Stool
   - Mini fridge
   - Clock
   - doormat

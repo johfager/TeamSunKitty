@@ -8,7 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
+  - enabled: 1
+    path: Assets/Game/Rooms/SplashScreen/SceneRoomSplashScreen.unity
+    guid: ccaba8b3cc6e9e746909f0fd3641df0a
+  - enabled: 1
     path: Assets/Game/Rooms/Title/SceneRoomTitle.unity
     guid: ead3603028b9575468e0b9f054b6dc6c
   - enabled: 0

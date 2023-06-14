@@ -41,6 +41,8 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 5dd5ac30eae634e8ab5fbb5311abc281, type: 3}
   - {fileID: 21300000, guid: 7c503304f10f44dfe828140f0fe3d90f, type: 3}
   - {fileID: 21300000, guid: c71e73c4dea404d6fae77ec00b9eaff5, type: 3}
+  - {fileID: 21300000, guid: 3b9db506afb5c47929b827da965a3387, type: 3}
+  - {fileID: 21300000, guid: cab7f5964525f46db9e19cbbea644c87, type: 3}
   - {fileID: 21300000, guid: d2f2fdc7f57aa4b27b455a53a0f824a8, type: 3}
   - {fileID: 21300000, guid: 21d5a8e91bf77484ea5d1137748780f2, type: 3}
   - {fileID: 21300000, guid: 21677b0b14de845a79d6e42f0b71df38, type: 3}
@@ -50,6 +52,8 @@ SpriteAtlas:
   - pots_black
   - Matches
   - doormat_black
+  - stool_black
+  - Mini fridge-black
   - Oven-UNLIT
   - newspaper_black
   - table_black

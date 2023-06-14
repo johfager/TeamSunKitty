@@ -37,8 +37,14 @@ SpriteAtlas:
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
-  m_PackedSprites: []
-  m_PackedSpriteNamesToIndex: []
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 7620fa98447ff4ecebb0023b3b52a418, type: 3}
+  - {fileID: 21300000, guid: 96547eec1d7484787b1ad38379ed61a8, type: 3}
+  - {fileID: 21300000, guid: db5a2d2fce24845ed8a346ba9b5b2abe, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Lastscene_background
+  - Kettil-still frame
+  - Runestone
   m_RenderDataMap: {}
   m_Tag: RoomEndSceneAtlas
   m_IsVariant: 0

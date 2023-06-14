@@ -18,13 +18,10 @@ public class RoomTitle : RoomScript<RoomTitle>
 
 	public IEnumerator OnEnterRoomAfterFade()
 	{
-		
+		Cursor.Visible = true;
 		// Start cutscene, so this can be skipped by pressing ESC
 		E.StartCutscene();
 		
-		// Fade in the title prop
-		Prop("Title").Visible = true;
-		yield return Prop("Title").Fade(0,1,1.0f);
 		
 		// Wait a moment
 		yield return E.Wait(0.5f);
