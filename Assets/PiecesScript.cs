@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using PowerScript;
+using PowerTools.Quest;
 using UnityEngine;
 
 public class PiecesScript : MonoBehaviour
@@ -10,6 +12,7 @@ int []  rotations ={0, 90, 180, 270}; //obs tutorial have wrong ()
 public float correctRotation; // facit (in num degrees) on per piece object basis
 [SerializeField]
 bool isPlaced= false; //will update to check if registered correct placement
+[SerializeField] AudioCue puzzleRotationSound; //will update to check if registered correct placement
 
 
 
@@ -49,6 +52,7 @@ bool isPlaced= false; //will update to check if registered correct placement
     //don't rotate correct ones
         if (isPlaced==false) //not working yet
         {
+            SystemAudio.Play(puzzleRotationSound);
             transform.Rotate(0,0,90);
             transform.eulerAngles= new Vector3(0,0,Mathf.Round(transform.eulerAngles.z));
         }

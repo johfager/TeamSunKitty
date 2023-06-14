@@ -100,6 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctRotation: 0
   isPlaced: 0
+  puzzleRotationSound: {fileID: 4134598921854115870, guid: 0a421debd30469d4191325e6a5269cfd, type: 3}
   spriteRenderer: {fileID: 1800141559933816546}
   newSprite: {fileID: 21300000, guid: 1ce0b89d054ca449387e3604f910cbb8, type: 3}
   otherObject: {fileID: 8732660615797081300}
@@ -229,6 +230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctRotation: 0
   isPlaced: 0
+  puzzleRotationSound: {fileID: 4134598921854115870, guid: 0a421debd30469d4191325e6a5269cfd, type: 3}
   spriteRenderer: {fileID: 9027522893106979480}
   newSprite: {fileID: 21300000, guid: 2085314c606ef4a6b889d1d9bfd11a1d, type: 3}
   otherObject: {fileID: 8732660615797081300}
@@ -438,6 +440,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctRotation: 0
   isPlaced: 0
+  puzzleRotationSound: {fileID: 4134598921854115870, guid: 0a421debd30469d4191325e6a5269cfd, type: 3}
   spriteRenderer: {fileID: 4500166627642593481}
   newSprite: {fileID: 21300000, guid: 1142faecdaaf54f469689b3844725c27, type: 3}
   otherObject: {fileID: 8732660615797081300}
@@ -755,6 +758,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctRotation: 0
   isPlaced: 0
+  puzzleRotationSound: {fileID: 4134598921854115870, guid: 0a421debd30469d4191325e6a5269cfd, type: 3}
   spriteRenderer: {fileID: 29123213132971114}
   newSprite: {fileID: 21300000, guid: 86fa1090a07c24876a673f5c2dd439b8, type: 3}
   otherObject: {fileID: 8732660615797081300}
@@ -884,6 +888,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctRotation: 0
   isPlaced: 0
+  puzzleRotationSound: {fileID: 4134598921854115870, guid: 0a421debd30469d4191325e6a5269cfd, type: 3}
   spriteRenderer: {fileID: 7450542713757610955}
   newSprite: {fileID: 21300000, guid: e93f83ce0bb7c40b99106cf7f2ce5eac, type: 3}
   otherObject: {fileID: 8732660615797081300}
@@ -1013,6 +1018,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctRotation: 0
   isPlaced: 0
+  puzzleRotationSound: {fileID: 4134598921854115870, guid: 0a421debd30469d4191325e6a5269cfd, type: 3}
   spriteRenderer: {fileID: 4192803488692832569}
   newSprite: {fileID: 21300000, guid: 8be9aed05433640439d551513c461f19, type: 3}
   otherObject: {fileID: 8732660615797081300}
@@ -1142,6 +1148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctRotation: 0
   isPlaced: 0
+  puzzleRotationSound: {fileID: 4134598921854115870, guid: 0a421debd30469d4191325e6a5269cfd, type: 3}
   spriteRenderer: {fileID: 1611885672402447605}
   newSprite: {fileID: 21300000, guid: 297bdb8ac4a884b25ad82d07552de54d, type: 3}
   otherObject: {fileID: 8732660615797081300}
@@ -1271,6 +1278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctRotation: 0
   isPlaced: 0
+  puzzleRotationSound: {fileID: 4134598921854115870, guid: 0a421debd30469d4191325e6a5269cfd, type: 3}
   spriteRenderer: {fileID: 714820818442068085}
   newSprite: {fileID: 21300000, guid: 01674d02c64164913b919395a7fa4b54, type: 3}
   otherObject: {fileID: 8732660615797081300}
@@ -1789,6 +1797,7 @@ MonoBehaviour:
   PopItem_key: {fileID: 7821329382172215459}
   totalPieces: 0
   numCompleted: 0
+  puzzleWinSound: {fileID: 7540207193006728776, guid: 445e2f789743776449b8783111b33a72, type: 3}
 --- !u!1 &8779923892495159945
 GameObject:
   m_ObjectHideFlags: 0
@@ -1889,6 +1898,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctRotation: 0
   isPlaced: 0
+  puzzleRotationSound: {fileID: 4134598921854115870, guid: 0a421debd30469d4191325e6a5269cfd, type: 3}
   spriteRenderer: {fileID: 8569533943841909305}
   newSprite: {fileID: 21300000, guid: b52263a74214a4cdd8a1c06a9b350adb, type: 3}
   otherObject: {fileID: 8732660615797081300}

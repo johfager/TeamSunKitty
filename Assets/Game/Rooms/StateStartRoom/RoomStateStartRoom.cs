@@ -16,12 +16,12 @@ public class RoomStateStartRoom : RoomScript<RoomStateStartRoom>
 		if(Globals.m_livingRoomLit == false)
 		{
 			E.ChangeRoomBG(R.StateExperimentRoom);
-			C.MainChar.SetPosition(R.StateExperimentRoom.GetPoint("Entry"));
+			C.Ulrika.SetPosition(R.StateExperimentRoom.GetPoint("Entry"));
 		}
 		else
 		{
 			E.ChangeRoomBG(R.LitLivingRoom);
-			C.MainChar.SetPosition(R.LitLivingRoom.GetPoint("LeftEntry"));
+			C.Ulrika.SetPosition(R.LitLivingRoom.GetPoint("LeftEntry"));
 		}
 		
 		yield return E.Break;

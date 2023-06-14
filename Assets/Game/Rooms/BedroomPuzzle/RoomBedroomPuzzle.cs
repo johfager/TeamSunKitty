@@ -1,4 +1,5 @@
 
+
 using UnityEngine;
 using System.Collections;
 using PowerTools.Quest;
@@ -24,13 +25,14 @@ public class RoomBedroomPuzzle : RoomScript<RoomBedroomPuzzle>
 
 	IEnumerator OnUseInvPropBedroomKey( IProp prop, IInventory item )
 	{
-		yield return C.MainChar.Say("I'm not sure if I should use this...");
+		yield return C.Ulrika.Say("I'm not sure if I should use this...");
 		yield return E.Break;
 	}
 
 	void Update()
 	{
 
+		
 		
 		
 	}

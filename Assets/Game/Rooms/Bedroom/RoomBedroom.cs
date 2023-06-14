@@ -26,10 +26,10 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		
 		if (m_bedRoomDoorUnlocked == true)
 		{
-
+			Audio.Play("SoundDOOR");
 			E.ChangeRoomBG(R.UnlitKitchen);
-
-			C.MainChar.SetPosition(-600, -200);
+		
+			C.Ulrika.SetPosition(-600, -200);
 		}
 		else
 		{
@@ -53,9 +53,9 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 			Prop("DoorKnobForDoor").Enable();
 			yield return E.Wait(1);
 			yield return E.WaitSkip();
-			yield return C.MainChar.FaceDown();
+			yield return C.Ulrika.FaceDown();
 			yield return E.WaitSkip();
-			yield return C.MainChar.Say("Yaay!");
+			yield return C.Ulrika.Say("Yaay!");
 			I.DoorKnob.Remove();
 		}
 
@@ -71,9 +71,9 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		
 			yield return E.Wait(1);
 			yield return E.WaitSkip();
-			yield return C.MainChar.FaceDown();
+			yield return C.Ulrika.FaceDown();
 			yield return E.WaitSkip();
-			yield return C.MainChar.Say("Yaay!");
+			yield return C.Ulrika.Say("Yaay!");
 			I.Key.Remove();
 		}
 		
@@ -99,7 +99,9 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 	{
 		//m_rugInteract = true;
 		yield return C.WalkToClicked();
-		yield return C.MainChar.Say("Hrmph...!");
+
+		yield return C.Ulrika.Say("Hrmph...!");
+
 		yield return E.WaitSkip();
 		//above is dif add
 		Prop("Rug").Disable();
@@ -109,9 +111,9 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 
 	IEnumerator OnInteractHotspotRuneInteraction( IHotspot hotspot )
 	{
-		yield return C.MainChar.Say("I don't remember seeing this before");
+		yield return C.Ulrika.Say("I don't remember seeing this before");
 		yield return E.WaitSkip();
-		yield return C.MainChar.Say("It looks like they can be moved");
+		yield return C.Ulrika.Say("It looks like they can be moved");
 		
 		yield return E.ChangeRoom(R.BedroomPuzzle);
 		
@@ -127,7 +129,7 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		//if ( FirstTimeVisited && EnteredFromEditor == false ) // Only run this part the first time you visit, and not when debugging
 		//{
 		//	MainChar: Well, I guess this is a bedroom lol
-		//	C.MainChar.WalkTo(Point("EntryWalk"));
+		//	C.Ulrika.WalkTo(Point("EntryWalk"));
 		//	MainChar: Sure looks like a bed to me!
 		//	Audio.PlayMusic("MusicExample");
 		//
@@ -166,8 +168,8 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		{
 			C.Display("As the rune shifted into its original place, pieces of the floor could be removed");
 			E.WaitSkip();
-			C.MainChar.MoveTo(Point("PositionAfterPuzzle"));
-			C.MainChar.Enable();
+			C.Ulrika.MoveTo(Point("PositionAfterPuzzle"));
+			C.Ulrika.Enable();
 			Prop("RunePuzzleFinished").Enable();
 			Prop("Cupboard_open").Enable();
 			Prop("DoorKnob").Enable();
@@ -194,7 +196,8 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		I.Key.Add();
 		yield return E.WaitSkip();
 		yield return C.Player.FaceDown();
-		yield return C.MainChar.Say("A key? I'll hold onto this.");
+		yield return C.Ulrika.Say("A key? I'll hold onto this.");
+
 		yield return E.WaitSkip();
 		
 		
@@ -213,6 +216,7 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 
 	IEnumerator OnInteractPropCupboard( IProp prop )
 	{
+
 		yield return C.WalkToClicked();
 		yield return C.FaceClicked();
 		Prop("Cupboard").Disable();
@@ -231,6 +235,9 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		prop.Disable();
 		yield return E.WaitSkip();
 		yield return C.Display("Sticks? Are those your grand plan to defeat me? Pathetic.");
+
+		//yield return C.Ulrika.Say("Ooh, maybe I could burn the beast?");
+		//yield return C.Display("You quickly abolish the thought.");
 
 		yield return E.Break;
 		

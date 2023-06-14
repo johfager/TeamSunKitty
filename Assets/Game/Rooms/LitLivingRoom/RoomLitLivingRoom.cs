@@ -12,14 +12,14 @@ public class RoomLitLivingRoom : RoomScript<RoomLitLivingRoom>
 	{
 		yield return C.FaceClicked();
 		yield return C.Display("Nice and warm. The matches worked wonders.");
-		yield return C.MainChar.Say("The ominous glow is concerning though.");
+		yield return C.Ulrika.Say("The ominous glow is concerning though.");
 		yield return E.Break;
 	}
 
 	IEnumerator OnInteractPropFireplace( IProp prop )
 	{
 		yield return C.FaceClicked();
-		yield return C.MainChar.Say("I don't feel like I should touch that.");
+		yield return C.Ulrika.Say("I don't feel like I should touch that.");
 		yield return E.Break;
 	}
 
@@ -34,7 +34,7 @@ public class RoomLitLivingRoom : RoomScript<RoomLitLivingRoom>
 		yield return C.WalkToClicked();
 		yield return C.FaceClicked();
 			E.ChangeRoomBG(R.StateStartRoom);
-			C.MainChar.SetPosition(R.StateStartRoom.GetPoint("Entry"));
+			C.Ulrika.SetPosition(R.StateStartRoom.GetPoint("Entry"));
 		yield return E.Break;
 	}
 }

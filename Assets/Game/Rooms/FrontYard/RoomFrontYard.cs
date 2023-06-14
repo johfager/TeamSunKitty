@@ -19,13 +19,13 @@ public class RoomFrontYard : RoomScript<RoomFrontYard>
 	{
 		yield return C.WalkToClicked();
 		yield return C.FaceClicked();
-		yield return C.MainChar.Say("It looks like an old fish...");
+		yield return C.Ulrika.Say("It looks like an old fish...");
 		yield return E.Break;
 	}
 
 	IEnumerator OnInteractPropStatue( IProp prop )
 	{
-		yield return C.MainChar.Say("It hard as a rock...");
+		yield return C.Ulrika.Say("It hard as a rock...");
 		yield return E.Break;
 	}
 }

@@ -374,7 +374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: DoorToKitchen
+    m_description: Kitchen
     m_cursor: 
     m_clickable: 1
     m_baseline: 0

@@ -42,10 +42,10 @@ public class RoomUnlitKitchen : RoomScript<RoomUnlitKitchen>
 		yield return C.FaceClicked();
 		yield return C.Display("Ah, a box of matches, the most suicidal tool out there.");
 		yield return C.Display("Providing both the tools and the means to destroy itself within itself.");
-		yield return C.MainChar.Say("Think that says more about you than the matches.");
-		yield return C.MainChar.Say("I've never burned any for fun.");
+		yield return C.Ulrika.Say("Think that says more about you than the matches.");
+		yield return C.Ulrika.Say("I've never burned any for fun.");
 		yield return C.Display("Who says matches don't love being on fire, hm?");
-		yield return C.MainChar.Say("You really are delusional.");
+		yield return C.Ulrika.Say("You really are delusional.");
 		yield return E.Break;
 	}
 
@@ -55,11 +55,12 @@ public class RoomUnlitKitchen : RoomScript<RoomUnlitKitchen>
 	{
 		yield return C.Display("Use:");
 		yield return C.Display("You're gonna light it up with your hands?");
-		yield return C.MainChar.Say("You don't know me or what I can do!");
+		yield return C.Ulrika.Say("You don't know me or what I can do!");
 		yield return C.Display("Most humans I've seen don't know pyromancy.");
 		yield return C.Display("And you don't seem THAT special.");
-		//MainChar: Fine, be that way!
-		//MainChar: I'll find some tool like a normal human.
+		//Ulrika: Fine, be that way!
+		//Ulrika: I'll find some tool like a normal human.
+
 		yield return E.Break;
 	}
 
@@ -71,12 +72,12 @@ public class RoomUnlitKitchen : RoomScript<RoomUnlitKitchen>
 			yield return C.WalkToClicked();
 			yield return C.FaceClicked();
 			E.StartCutscene();
-			yield return C.MainChar.Say("This looks like a proper use for these little guys.");
+			yield return C.Ulrika.Say("This looks like a proper use for these little guys.");
 			yield return C.Display("As long as they burn, I'm happy.");
 			Globals.m_livingRoomLit = true;
 		
 			E.ChangeRoomBG(R.LitKitchen);
-			C.MainChar.SetPosition(R.LitKitchen.GetPoint("LitSpawnPoint"));
+			C.Ulrika.SetPosition(R.LitKitchen.GetPoint("LitSpawnPoint"));
 		
 			I.Matches.Remove(1);
 			E.EndCutscene();
@@ -87,6 +88,7 @@ public class RoomUnlitKitchen : RoomScript<RoomUnlitKitchen>
 	IEnumerator OnLookAtPropFireplace( IProp prop )
 	{
 		yield return C.Display("How do you feel watching the flames?");
+
 		yield return E.Break;
 	}
 
@@ -96,6 +98,8 @@ public class RoomUnlitKitchen : RoomScript<RoomUnlitKitchen>
 
 	IEnumerator OnInteractHotspotDoorToBedroom( IHotspot hotspot )
 	{
+		yield return C.WalkToClicked();
+		Audio.Play("SoundDOOR");
 		yield return E.ChangeRoom(R.Bedroom);
 		yield return E.Break;
 	}
