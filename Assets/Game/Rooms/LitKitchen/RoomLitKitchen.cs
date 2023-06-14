@@ -68,7 +68,7 @@ public class RoomLitKitchen : RoomScript<RoomLitKitchen>
 
 	IEnumerator OnLookAtPropWoodpile( IProp prop )
 	{
-		yield return C.Display("“Organic but no intellect? Where’s the fun in that?”");
+		yield return C.Display("Organic but no intellect? Where’s the fun in that?");
 		
 		yield return E.Break;
 	}
