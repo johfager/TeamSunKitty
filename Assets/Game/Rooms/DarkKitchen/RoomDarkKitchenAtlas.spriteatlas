@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: RoomDarkKitchenAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 558b49848b49aa74e988dcc9df4d2800, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 2332dba05da2b15468dbc4e4d9f92a04, type: 3}
+  - {fileID: 21300000, guid: 9772a851eb9e3b746beef415e45cf9f5, type: 3}
+  - {fileID: 21300000, guid: 86664f33b17eb3c4ca7d11a94982239b, type: 3}
+  - {fileID: 21300000, guid: d0c43ea7806a1814eaff5bf342869a56, type: 3}
+  - {fileID: 21300000, guid: 884c5e5bd9deb8d4a8b3b2216a558626, type: 3}
+  - {fileID: 21300000, guid: 1a7d149cdc02f1141a7a2478531d2b0a, type: 3}
+  - {fileID: 21300000, guid: ce672fcda29f05d42b2d1711f4bdffe9, type: 3}
+  - {fileID: 21300000, guid: e442b05f89c79f744afb6968c0b0044b, type: 3}
+  - {fileID: 21300000, guid: f00388bf9a0e39842ab156e71cc9b1c0, type: 3}
+  - {fileID: 21300000, guid: dc325fbf186e14a4298a3ac96a5e4142, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Kitchen-UNLIT
+  - Matches
+  - clock_black
+  - newspaper_black
+  - table_black
+  - pots_black
+  - Oven-UNLIT
+  - stool_black
+  - doormat_black
+  - Mini fridge-black
+  m_RenderDataMap: {}
+  m_Tag: RoomDarkKitchenAtlas
+  m_IsVariant: 0

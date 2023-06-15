@@ -15,4 +15,10 @@ public class GuiInventoryBar : GuiScript<GuiInventoryBar>
 	void OnPostRestore( int version )
 	{
 	}
+
+	IEnumerator OnClickBtnRight( IGuiControl control )
+	{
+
+		yield return E.Break;
+	}
 }

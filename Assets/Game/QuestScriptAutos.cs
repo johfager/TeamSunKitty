@@ -68,6 +68,7 @@ namespace PowerScript
 		public static IRoom CreditsScreen  { get { return PowerQuest.Get.GetRoom("CreditsScreen"); } }
 		public static IRoom UnlitKitchen   { get { return PowerQuest.Get.GetRoom("UnlitKitchen"); } }
 		public static IRoom SplashScreen   { get { return PowerQuest.Get.GetRoom("SplashScreen"); } }
+		public static IRoom DarkKitchen    { get { return PowerQuest.Get.GetRoom("DarkKitchen"); } }
 		// #ROOM# - Do not edit this line, it's used by the system to insert rooms for easy access
 	}
 

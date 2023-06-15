@@ -27,7 +27,7 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		if (m_bedRoomDoorUnlocked == true)
 		{
 			Audio.Play("SoundDOOR");
-			E.ChangeRoomBG(R.UnlitKitchen);
+			E.ChangeRoomBG(R.DarkKitchen);
 		
 			C.Ulrika.SetPosition(-600, -200);
 		}
