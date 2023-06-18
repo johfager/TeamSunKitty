@@ -28,4 +28,10 @@ public class RoomEndScene : RoomScript<RoomEndScene>
 		yield return E.ChangeRoom(R.CreditsScreen);
 		yield return E.Break;
 	}
+
+	IEnumerator OnExitRoom( IRoom oldRoom, IRoom newRoom )
+	{
+
+		yield return E.Break;
+	}
 }

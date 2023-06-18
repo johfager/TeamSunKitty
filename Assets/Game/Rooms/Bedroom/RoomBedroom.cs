@@ -11,13 +11,13 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 	
 	// Here's an example variable, an integer which is used when clicking the sky.
 	// The 'm_' at the start is just a naming convention so you can tell it's not just a 'local' variable
-	int m_timesClickedSky = 0;
+	//int m_timesClickedSky = 0;
 	bool m_bedRoomDoorUnlocked = false;
 	bool m_doorKnobUsedOnDoor = false;
 	bool m_runePuzzleFinishedBedRoom = false;
 	// enums like this are a nice way of keeping track of what's happened in a room
-	enum eThingsYouveDone { Start, InsultedChimp, EatenSandwich, LoadedCrossbow, AttackedFlyingNun, PhonedAlbatross, DoorKnobUsedOnDoor}
-	eThingsYouveDone m_thingsDone = eThingsYouveDone.Start;
+	//enum eThingsYouveDone { Start, InsultedChimp, EatenSandwich, LoadedCrossbow, AttackedFlyingNun, PhonedAlbatross, DoorKnobUsedOnDoor}
+	//eThingsYouveDone m_thingsDone = eThingsYouveDone.Start;
 
 	IEnumerator OnInteractHotspotDoorToKitchen( IHotspot hotspot )
 	{
@@ -146,6 +146,19 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 
 	void OnEnterRoom()
 	{
+		if (Globals.m_progressExample==eProgress.None){
+		m_bedRoomDoorUnlocked = false;
+		
+		m_doorKnobUsedOnDoor = false;
+		m_runePuzzleFinishedBedRoom = false;
+		
+		//m_livingRoomLit = false;
+		
+		}
+		else{
+		C.Display("The global progress has not reset");
+		}
+		
 		
 		if(m_doorKnobUsedOnDoor == false)
 		{
@@ -270,6 +283,12 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		
 		yield return C.Display("The poem seems to be cut off here…");
 		
+		yield return E.Break;
+	}
+
+	IEnumerator OnUseInvPropDoorKnobForDoor( IProp prop, IInventory item )
+	{
+
 		yield return E.Break;
 	}
 }
