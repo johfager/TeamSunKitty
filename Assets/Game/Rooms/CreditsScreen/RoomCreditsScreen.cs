@@ -26,8 +26,11 @@ public class RoomCreditsScreen : RoomScript<RoomCreditsScreen>
 		
 			//copy globals initiateGlobals.eProgress m_progressExample = eProgress.None;
 		
-		Globals.m_progressExample=eProgress.None;
-		E.ChangeRoomBG(R.Bedroom);
+		//Globals.m_progressExample=eProgress.None;
+		//E.ChangeRoomBG(R.Bedroom);
+		//Prop("Background").Canvas.Disable();
+		GuiSave.Script.ShowRestore();
+		
 		
 		yield return E.Break;
 	}

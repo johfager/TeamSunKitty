@@ -187,7 +187,7 @@ GameObject:
   - component: {fileID: 4426685873912119253}
   - component: {fileID: 537252178598924438}
   - component: {fileID: 4930705186159822513}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -389,7 +389,7 @@ GameObject:
   - component: {fileID: 8536996825950798317}
   - component: {fileID: 5164686264049998286}
   - component: {fileID: 2000414103218404539}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PropDoOver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -540,8 +540,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1164025503
-  m_SortingLayer: 1
+  m_SortingLayerID: 1427032521
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -565,7 +565,7 @@ GameObject:
   - component: {fileID: 2706781771212692484}
   - component: {fileID: 1225150188077392606}
   - component: {fileID: 8804801089529646606}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -849,7 +849,7 @@ GameObject:
   - component: {fileID: 491098629301392947}
   - component: {fileID: 6851623453225371110}
   - component: {fileID: 3725791956065215744}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
