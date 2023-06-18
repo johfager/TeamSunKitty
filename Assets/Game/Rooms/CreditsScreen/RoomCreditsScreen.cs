@@ -20,4 +20,18 @@ public class RoomCreditsScreen : RoomScript<RoomCreditsScreen>
 		Audio.PlayMusic("SoundLake Town [Mastered]");
 		yield return E.Break;
 	}
+
+	IEnumerator OnInteractPropDoOver( IProp prop )
+	{
+		
+			//copy globals initiateGlobals.eProgress m_progressExample = eProgress.None;
+		
+		//Globals.m_progressExample=eProgress.None;
+		//E.ChangeRoomBG(R.Bedroom);
+		//Prop("Background").Canvas.Disable();
+		GuiSave.Script.ShowRestore();
+		
+		
+		yield return E.Break;
+	}
 }

@@ -10,11 +10,11 @@ public class RoomForest : RoomScript<RoomForest>
 	
 	// Here's an example variable, an integer which is used when clicking the sky.
 	// The 'm_' at the start is just a naming convention so you can tell it's not just a 'local' variable
-	int m_timesClickedSky = 0;
+	//int m_timesClickedSky = 0;
 	
 	// enums like this are a nice way of keeping track of what's happened in a room
-	enum eThingsYouveDone { Start, InsultedChimp, EatenSandwich, LoadedCrossbow, AttackedFlyingNun, PhonedAlbatross }
-	eThingsYouveDone m_thingsDone = eThingsYouveDone.Start;
+	//enum eThingsYouveDone { Start, InsultedChimp, EatenSandwich, LoadedCrossbow, AttackedFlyingNun, PhonedAlbatross }
+	//eThingsYouveDone m_thingsDone = eThingsYouveDone.Start;
 	
 	public void OnEnterRoom()
 	{
@@ -131,7 +131,7 @@ public class RoomForest : RoomScript<RoomForest>
 			yield return C.WalkToClicked();
 			yield return C.FaceClicked();
 			yield return C.Display("Dave lowers the bucket down, and collects some juicy well water");
-			Globals.m_progressExample = eProgress.GotWater;
+			//Globals.m_progressExample = eProgress.GotWater;
 			yield return C.Dave.Say("Yaaay! I solved the real hard puzzle!");
 			yield return E.Wait(1);
 			yield return C.Display("THE END");
@@ -154,14 +154,14 @@ public class RoomForest : RoomScript<RoomForest>
 
 	}
 
-	public IEnumerator OnInteractHotspotSky( Hotspot hotspot )
-	{
+	//public IEnumerator OnInteractHotspotSky( Hotspot hotspot )
+	//{
 		// Increment the room's variable
-		m_timesClickedSky++;  
+		//m_timesClickedSky++;  
 		// Show some text including the variable. Use {braces} to include variables in text
-		yield return C.Display($"You've clicked the sky {m_timesClickedSky} times");
+		//yield return C.Display($"You've clicked the sky {m_timesClickedSky} times");
 		
-	}
+	//}
 
 
 	public IEnumerator OnLookAtHotspotForest( IHotspot hotspot )
@@ -221,11 +221,11 @@ public class RoomForest : RoomScript<RoomForest>
 		
 		// In this case m_thingsDone is not 'EatenSandwich', so nothing happens here, 
 		// and the OnInteract function in Barney's main script will be called instead
-		if ( m_thingsDone == eThingsYouveDone.EatenSandwich )
-		{
-			yield return C.Dave.Say("I ate your sandwich");
-			yield return C.Barney.Say("You monster");
-		}
+		//if ( m_thingsDone == eThingsYouveDone.EatenSandwich )
+		//{
+		//	yield return C.Dave.Say("I ate your sandwich");
+		//	yield return C.Barney.Say("You monster");
+		//}
 		
 		yield return E.Break;
 	}

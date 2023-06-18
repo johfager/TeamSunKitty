@@ -21,8 +21,6 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 	public enum eProgress
 	{
 		None,
-		GotWater,
-		DrankWater,
 		BedRoomUnlocked,
 		WonGame,
 		LitLivingRoom
