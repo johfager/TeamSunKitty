@@ -60,7 +60,7 @@ public class RoomBedroomPuzzle : RoomScript<RoomBedroomPuzzle>
 
 	IEnumerator OnInteractPropBackground( IProp prop )
 	{
-
+		C.Player.Room=R.Bedroom;
 		yield return E.Break;
 	}
 
