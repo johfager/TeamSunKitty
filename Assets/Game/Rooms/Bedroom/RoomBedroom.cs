@@ -248,10 +248,10 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		prop.Disable();
 		yield return E.WaitSkip();
 		yield return C.Display("Sticks? Are those your grand plan to defeat me? Pathetic.");
-
+		
 		//yield return C.Ulrika.Say("Ooh, maybe I could burn the beast?");
 		//yield return C.Display("You quickly abolish the thought.");
-
+		
 		yield return E.Break;
 		
 		yield return E.Break;
@@ -271,22 +271,48 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 
 	IEnumerator OnInteractPropOminousPaper( IProp prop )
 	{
+		Audio.Play("Soundnewspaper");
+		
 		yield return C.Display("Long ago, by Storsjön shore");
+		Audio.Play("Soundnewspaper");
+		
 		yield return C.Display("Jata and Kata’s cauldron bore");
+		Audio.Play("Soundnewspaper");
+		
 		yield return C.Display("A boiling brew, trolls carefully tend");
+		Audio.Play("Soundnewspaper");
+		
 		yield return C.Display("Ingredients galore, holding no end");
+		Audio.Play("Soundnewspaper");
+		
 		
 		yield return C.Display("Hark, the cauldron shouted a cry");
+		Audio.Play("Soundnewspaper");
+		
 		yield return C.Display("A serpent, a creature, a cat head held high");
+		Audio.Play("Soundnewspaper");
+		
 		yield return C.Display("It vanished in waters growing in might");
+		Audio.Play("Soundnewspaper");
+		
 		yield return C.Display("Eyes averted, true horror in sight");
+		Audio.Play("Soundnewspaper");
+		
 		
 		yield return C.Display("The poem seems to be cut off here…");
+		Audio.Play("Soundnewspaper");
+		
 		
 		yield return E.Break;
 	}
 
 	IEnumerator OnUseInvPropDoorKnobForDoor( IProp prop, IInventory item )
+	{
+
+		yield return E.Break;
+	}
+
+	IEnumerator OnUseInvPropMatches( IProp prop, IInventory item )
 	{
 
 		yield return E.Break;

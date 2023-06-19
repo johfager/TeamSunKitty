@@ -69,8 +69,8 @@ MonoBehaviour:
   m_autoLayoutChildren: 0
   m_itemSpacing: {x: 29.5, y: 16.08}
   m_columnsPerRow: 0
-  m_scrollColumns: 6
+  m_scrollColumns: 4
   m_scrollRows: 1
   m_overdraw: {x: 0, y: 0}
   m_items: []
-  m_size: {x: 193, y: 16}
+  m_size: {x: 118, y: 29}

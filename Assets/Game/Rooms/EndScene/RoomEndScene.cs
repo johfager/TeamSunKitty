@@ -6,10 +6,14 @@ using static GlobalScript;
 
 public class RoomEndScene : RoomScript<RoomEndScene>
 {
+		
 	void OnEnterRoom()
 	{
-		
-		
+		C.Ulrika.Enable();
+		C.Ulrika.Room=R.Current;
+		C.Kettil.Enable();
+		C.Kettil.Room = R.Current;
+		C.Kettil.SetPosition(1238,-220);
 	}
 
 	IEnumerator OnEnterRoomAfterFade()
