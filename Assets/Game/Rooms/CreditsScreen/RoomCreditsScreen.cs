@@ -12,12 +12,12 @@ public class RoomCreditsScreen : RoomScript<RoomCreditsScreen>
 	{
 		G.InventoryBar.Hide();
 		G.Toolbar.Hide();
-		Audio.PlayMusic("SoundLake Town [Mastered]");
+		Audio.PlayMusic("SoundLakeTown");
 	}
 
 	IEnumerator OnEnterRoomAfterFade()
 	{
-		Audio.PlayMusic("SoundLake Town [Mastered]");
+		Audio.PlayMusic("SoundLakeTown");
 		yield return E.Break;
 	}
 

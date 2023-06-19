@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6506310044060966709}
   - component: {fileID: 6715696977301399219}
   m_Layer: 0
-  m_Name: SoundLake Town [Mastered]
+  m_Name: SoundLakeTown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ MonoBehaviour:
   m_highPassFilter: {fileID: 0}
   m_chorusFilter: {fileID: 0}
   m_sounds:
-  - m_sound: {fileID: 8300000, guid: 09cf58f04650ecc4394758f4fa6a77c3, type: 3}
+  - m_sound: {fileID: 8300000, guid: acbcc8f86fcf5d24f94714c2b3068078, type: 3}
     m_weight: 100
     m_loop: 0
     m_volume:
