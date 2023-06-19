@@ -248,10 +248,10 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		prop.Disable();
 		yield return E.WaitSkip();
 		yield return C.Display("Sticks? Are those your grand plan to defeat me? Pathetic.");
-
+		
 		//yield return C.Ulrika.Say("Ooh, maybe I could burn the beast?");
 		//yield return C.Display("You quickly abolish the thought.");
-
+		
 		yield return E.Break;
 		
 		yield return E.Break;
