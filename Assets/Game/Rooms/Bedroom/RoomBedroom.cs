@@ -291,4 +291,10 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 
 		yield return E.Break;
 	}
+
+	IEnumerator OnUseInvPropMatches( IProp prop, IInventory item )
+	{
+
+		yield return E.Break;
+	}
 }

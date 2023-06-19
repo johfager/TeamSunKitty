@@ -142,6 +142,7 @@ MonoBehaviour:
   m_guiAnimations: []
   m_guiSprites:
   - {fileID: 21300000, guid: 6a87f4e540b9ead4ab036f0197dec31e, type: 3}
+  - {fileID: 21300000, guid: 6df47d356ef4545b189387417b673cdc, type: 3}
   - {fileID: 21300000, guid: 5a2e190714fb1234585290ae1f061236, type: 3}
   - {fileID: 21300000, guid: c01909c00b16e574f9b30f48d0558f09, type: 3}
   - {fileID: 21300000, guid: 9dac2c880ff5371489281cb91189e2ca, type: 3}
@@ -154,6 +155,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 361e9f69559850748975cee62ad79b4d, type: 3}
   - {fileID: 21300000, guid: 5371cf6554fb9fa4e9f737f4a896e2fb, type: 3}
   - {fileID: 21300000, guid: 2875a73c3eaee4e1f9b7632b6f444b44, type: 3}
+  - {fileID: 21300000, guid: 38c790065d72440e19bd7bf9d7447bf7, type: 3}
   - {fileID: 21300000, guid: 5349c2df1fa31f74dbc66c2ba9ed929f, type: 3}
   - {fileID: 21300000, guid: be5f95c309555b649a13ed0ec550229b, type: 3}
   - {fileID: 21300000, guid: c56b900b5816915419bea449e94bdd35, type: 3}
