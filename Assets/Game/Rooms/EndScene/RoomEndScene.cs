@@ -29,7 +29,7 @@ public class RoomEndScene : RoomScript<RoomEndScene>
 		Audio.Play("SoundSuspense [Mastered]");
 		yield return C.Display("“No! No! You’re going to kill me!”");
 		yield return C.Display("“It’ll be your fault! You’ll doom me and everyone here!”");
-		//Audio.Play("SoundDeath sound");
+		Audio.Play("SoundDeath");
 		yield return C.Kettil.Say("“NO! WHAT HAVE YOU DONE!?”");
 		yield return E.WaitSkip();
 		yield return E.WaitSkip();
