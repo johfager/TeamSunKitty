@@ -141,6 +141,7 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 	IEnumerator OnInteractPropBed( IProp prop )
 	{
 		yield return C.Display(" Not now");
+		
 		yield return E.Break;
 	}
 
@@ -315,6 +316,17 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 	IEnumerator OnUseInvPropMatches( IProp prop, IInventory item )
 	{
 
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractPropHelp( IProp prop )
+	{
+		yield return C.Display("Giving up so soon?");
+		yield return C.Display("Check out inventory top left, I'm sure things are there even if you can't see them immediately");
+		yield return C.Display("Left clicking item uses it while right clicking clears your hand");
+		yield return C.Display("And if you feel like being finicky, there are options top right");
+		yield return C.Display("Right click and left click gives different results");
+		yield return C.Display("And if you are deranged you can click F9 for restart");
 		yield return E.Break;
 	}
 }
