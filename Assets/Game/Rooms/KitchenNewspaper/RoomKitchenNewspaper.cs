@@ -103,7 +103,7 @@ public class RoomKitchenNewspaper : RoomScript<RoomKitchenNewspaper>
 		
 		yield return C.Display("The poem seems to be cut off here…");
 		Audio.Play("Soundnewspaper");
-		
+		Audio.Play("SoundPuzzle Clue [Mastered]");
 		
 		yield return E.Break;
 		
@@ -114,6 +114,12 @@ public class RoomKitchenNewspaper : RoomScript<RoomKitchenNewspaper>
 	IEnumerator OnInteractPropNewspaperA( IProp prop )
 	{
 
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractPropCup( IProp prop )
+	{
+		yield return C.Display("Not as bitter as the news I  bet");
 		yield return E.Break;
 	}
 }

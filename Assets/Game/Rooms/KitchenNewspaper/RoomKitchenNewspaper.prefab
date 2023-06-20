@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: ArticleDeaths
+    m_description: "Eivar Bj\xF6rklund's Daughter Missing - Presumed Dead\n"
     m_cursor: 
     m_clickable: 1
     m_baseline: 0
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: NewspaperA
+    m_description: "Latest issue of L\xE4nstidningen \xD6stersund"
     m_cursor: 
     m_visible: 1
     m_clickable: 1
@@ -397,7 +397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: Background
+    m_description: Leave the table
     m_cursor: 
     m_visible: 1
     m_clickable: 1
@@ -662,7 +662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: Cup
+    m_description: Coffe
     m_cursor: 
     m_visible: 1
     m_clickable: 1
@@ -701,10 +701,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -10, y: -10}
-      - {x: -10, y: 10}
-      - {x: 10, y: 10}
-      - {x: 10, y: -10}
+    - - {x: -626.5568, y: 169.78174}
+      - {x: -573.5648, y: -129.63005}
+      - {x: -267.38486, y: -373.26468}
+      - {x: 201.78368, y: -401.4984}
+      - {x: 651.97253, y: 52.005577}
+      - {x: -110.04815, y: 367.31146}
 --- !u!95 &7626876049940050305
 Animator:
   serializedVersion: 5
@@ -840,7 +842,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: Newspaper
+    m_description: Another ominious piece of paper
     m_cursor: 
     m_visible: 1
     m_clickable: 1
@@ -959,7 +961,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1067464421
   m_SortingLayer: 3
-  m_SortingOrder: -4
+  m_SortingOrder: -3
   m_Sprite: {fileID: 21300000, guid: b1b26fb0b9ae4484ebb12d259d6caf33, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1017,7 +1019,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: Article1
+    m_description: 'Could it be something in the water? '
     m_cursor: 
     m_clickable: 1
     m_baseline: 0
