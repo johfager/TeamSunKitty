@@ -149,6 +149,7 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 
 	void OnEnterRoom()
 	{
+		Audio.Stop("SoundLakeTown");
 		Audio.Play("SoundLakeTown");
 		if (Globals.m_progressExample==eProgress.None){
 		m_bedRoomDoorUnlocked = false;
@@ -192,7 +193,7 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		}
 		else
 		{
-			C.Display("As the rune shifted into its original place, pieces of the floor could be removed");
+			//Display: As the rune shifted into its original place, pieces of the floor could be removed
 			E.WaitSkip();
 			C.Ulrika.MoveTo(Point("PositionAfterPuzzle"));
 			C.Ulrika.Enable();
@@ -338,10 +339,13 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 	{
 		yield return C.Display("Giving up so soon?");
 		yield return C.Display("Check out inventory top left, I'm sure things are there even if you can't see them immediately");
-		yield return C.Display("Left clicking item uses it while right clicking clears your hand");
+		yield return C.Display("First item is placed over the dark brown left corner");
+		yield return C.Display("And pretty low");
+		yield return C.Display("Left clicking item uses it while right clicking clears your hand (needed for not using items)");
 		yield return C.Display("And if you feel like being finicky, there are options top right");
 		yield return C.Display("Right click and left click gives different results");
-		yield return C.Display("And if you are deranged you can click F9 for restart");
+		yield return C.Display("If you can't move, try clicking on the floor where there are no objects");
+		yield return C.Display("In worst case you can click F9 for restart (and losing progress)");
 		yield return E.Break;
 	}
 

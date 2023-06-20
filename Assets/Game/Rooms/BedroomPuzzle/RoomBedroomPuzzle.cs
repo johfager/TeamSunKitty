@@ -41,7 +41,7 @@ public class RoomBedroomPuzzle : RoomScript<RoomBedroomPuzzle>
 
 	void OnEnterRoom()
 	{
-		Audio.Play("SoundLakeTown");
+		//Audio.Play("SoundLakeTown");
 	}
 
 	IEnumerator OnInteractPropWinCondition( IProp prop )
