@@ -338,7 +338,7 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 	IEnumerator OnInteractPropHelp( IProp prop )
 	{
 		yield return C.Display("Giving up so soon?");
-		yield return C.Display("Check out inventory top left, I'm sure things are there even if you can't see them immediately");
+		yield return C.Display("Check out inventory top left, hover to make it show");
 		yield return C.Display("First item is placed over the dark brown left corner");
 		yield return C.Display("And pretty low");
 		yield return C.Display("Left clicking item uses it while right clicking clears your hand (needed for not using items)");
