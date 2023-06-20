@@ -42,7 +42,7 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 
 	IEnumerator OnUseInvHotspotDoorToKitchen( IHotspot hotspot, IInventory item )
 	{
-
+		
 		
 		if ( item == I.DoorKnob)
 		{
@@ -51,6 +51,8 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 			yield return C.Display("Nice work Ulrika...");
 			m_doorKnobUsedOnDoor = true;
 			Prop("DoorKnobForDoor").Enable();
+			Globals.m_progressExample = eProgress.KnobbedDoor;
+		
 			yield return E.Wait(1);
 			yield return E.WaitSkip();
 			yield return C.Ulrika.FaceDown();
@@ -58,7 +60,7 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 			yield return C.Ulrika.Say("Yaay!");
 			I.DoorKnob.Remove();
 		}
-
+		
 		
 		// NB: You need to check they used the correct item!
 		if ( item == I.Key & m_doorKnobUsedOnDoor == true )
@@ -153,13 +155,20 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		
 		m_doorKnobUsedOnDoor = false;
 		m_runePuzzleFinishedBedRoom = false;
+		}
+		
+		if (Globals.m_progressExample==eProgress.KnobbedDoor){
+		m_bedRoomDoorUnlocked = false;
+		
+		m_doorKnobUsedOnDoor = true;
+		m_runePuzzleFinishedBedRoom = true;
 		
 		//m_livingRoomLit = false;
 		
 		}
-		else{
-		C.Display("The global progress has not reset");
-		}
+		//else{
+		//Display: The global progress has not reset
+		//}
 		
 		
 		if(m_doorKnobUsedOnDoor == false)
@@ -173,6 +182,8 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 			Prop("RunePuzzleFinished").Disable();
 		
 		}
+		
+		
 		if(Globals.m_runePuzzleFinishedBedRoom == false & m_doorKnobUsedOnDoor == false)
 		{
 			Prop("DoorKnob").Disable();
@@ -187,7 +198,7 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 			C.Ulrika.Enable();
 			Prop("RunePuzzleFinished").Enable();
 			Prop("Cupboard_open").Enable();
-			Prop("DoorKnob").Enable();
+			Prop("Key").Enable();
 			Hotspot("RuneInteraction").Disable();
 		
 		}
@@ -233,12 +244,12 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 
 	IEnumerator OnInteractPropCupboard( IProp prop )
 	{
-
+		
 		yield return C.WalkToClicked();
 		yield return C.FaceClicked();
 		Prop("Cupboard").Disable();
 		Prop("Cupboard_open").Enable();
-		Prop("Key").Enable();
+		Prop("DoorKnob").Enable();
 		Prop("Matches").Enable();
 		yield return E.Break;
 	}
@@ -347,6 +358,12 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 	}
 
 	IEnumerator OnInteractPropDoorKnobForDoor( IProp prop )
+	{
+
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractPropRunePuzzleFinished( IProp prop )
 	{
 
 		yield return E.Break;
