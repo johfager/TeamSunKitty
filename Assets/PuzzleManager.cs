@@ -62,6 +62,9 @@ public class PuzzleManager : MonoBehaviour
             {
                 Pieces[i].SetActive(false); //should hide every rotating piece and showing background, the correct whole image
             }
+            yield return Audio.Play("SoundPuzzle Clue [Mastered]");
+            yield return C.Display("Ugh... guess I'll have to stand up and check it out");
+            
         //key reward appear at Pop layer
     }
 }

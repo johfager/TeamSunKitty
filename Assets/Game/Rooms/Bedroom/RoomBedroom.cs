@@ -147,6 +147,7 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 
 	void OnEnterRoom()
 	{
+		Audio.Play("SoundLakeTown");
 		if (Globals.m_progressExample==eProgress.None){
 		m_bedRoomDoorUnlocked = false;
 		
@@ -205,13 +206,13 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 	IEnumerator OnInteractPropKey( IProp prop )
 	{
 		yield return C.WalkToClicked();
-		Audio.Play("Bucket");
+		Audio.Play("SoundItem Found [Mastered]");
 		prop.Disable();
 		I.Key.Add();
 		yield return E.WaitSkip();
 		yield return C.Player.FaceDown();
 		yield return C.Ulrika.Say("A key? I'll hold onto this.");
-
+		
 		yield return E.WaitSkip();
 		
 		
@@ -225,6 +226,8 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 	{
 		prop.Disable();
 		I.DoorKnob.Add();
+		Audio.Play("SoundItem Found [Mastered]");
+		
 		yield return E.Break;
 	}
 
@@ -245,6 +248,8 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		yield return C.WalkToClicked();
 		yield return C.FaceClicked();
 		yield return C.Display("You found some matches!");
+		Audio.Play("SoundItem Found [Mastered]");
+		
 		I.Matches.AddAsActive();
 		prop.Disable();
 		yield return E.WaitSkip();
@@ -302,8 +307,7 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		
 		yield return C.Display("The poem seems to be cut off here…");
 		Audio.Play("Soundnewspaper");
-		
-		
+		Audio.Play("SoundPuzzle Clue [Mastered]");
 		yield return E.Break;
 	}
 
@@ -327,6 +331,24 @@ public class RoomBedroom : RoomScript<RoomBedroom>
 		yield return C.Display("And if you feel like being finicky, there are options top right");
 		yield return C.Display("Right click and left click gives different results");
 		yield return C.Display("And if you are deranged you can click F9 for restart");
+		yield return E.Break;
+	}
+
+	IEnumerator OnUseInvPropKey( IProp prop, IInventory item )
+	{
+
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtPropDoorKnobForDoor( IProp prop )
+	{
+
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractPropDoorKnobForDoor( IProp prop )
+	{
+
 		yield return E.Break;
 	}
 }

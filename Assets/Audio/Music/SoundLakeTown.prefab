@@ -47,9 +47,9 @@ MonoBehaviour:
   m_type: 1
   m_loop: 1
   m_volume:
-    m_min: 1
-    m_max: 1
-    m_hasMax: 0
+    m_min: 0
+    m_max: 0.5
+    m_hasMax: 1
     m_hasValue: 0
   m_pitch:
     m_min: 1
@@ -78,7 +78,7 @@ MonoBehaviour:
   m_chorusFilter: {fileID: 0}
   m_sounds:
   - m_sound: {fileID: 8300000, guid: acbcc8f86fcf5d24f94714c2b3068078, type: 3}
-    m_weight: 100
+    m_weight: 1.44
     m_loop: 0
     m_volume:
       m_min: 1

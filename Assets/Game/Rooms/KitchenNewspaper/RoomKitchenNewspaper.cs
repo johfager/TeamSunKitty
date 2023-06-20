@@ -103,7 +103,7 @@ public class RoomKitchenNewspaper : RoomScript<RoomKitchenNewspaper>
 		
 		yield return C.Display("The poem seems to be cut off here…");
 		Audio.Play("Soundnewspaper");
-		
+		Audio.Play("SoundPuzzle Clue [Mastered]");
 		
 		yield return E.Break;
 		
