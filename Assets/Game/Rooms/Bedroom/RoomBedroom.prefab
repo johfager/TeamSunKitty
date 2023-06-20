@@ -459,7 +459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: OminousPaper
+    m_description: An ominious scrap of paper
     m_cursor: 
     m_visible: 1
     m_clickable: 1
@@ -2065,7 +2065,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: DoorKnob
+    m_description: Doorknob
     m_cursor: 
     m_visible: 1
     m_clickable: 1
@@ -2602,7 +2602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: RuneInteraction
+    m_description: Confusing etchings
     m_cursor: 
     m_clickable: 1
     m_baseline: 0
@@ -2689,7 +2689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: Help
+    m_description: Notes to remember
     m_cursor: 
     m_visible: 1
     m_clickable: 1
